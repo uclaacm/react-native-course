@@ -3,15 +3,13 @@
   * Hi, my name is Chase, I'm a 2nd year Computer Science student at UCLA. [bio stuff?]
   Super excited to teach this class, I actually never got the opportunity to take a CS class until I got college so I'm super happy that you guys are getting 
   some early exposure to some super interesting and relevant technologies that I use almost every day. 
-  
-  *[Matt stuff]
-  
+  * [Matt stuff]
   * TEACHLA is a student-led organization at UCLA that aims to provide mentorship and support to students who want to pursue computer science, 
   either academically or as a career. We believe super strongly that having the opportunity to learn about computer science is extremely valuable, 
   and our goal is to make those opportunites as accessable as possible. 
  
   
-## Course Philosophy and Overview (5-10 mins)
+## Course Philosophy and Overview (10 mins)
 * We've been developing this course with the help of facebook over the past year and a ton of thought has been put into what we're teaching you, 
   why the stuff we're teaching you is relevant, and the best way to teach you these things while still making sure you guys stay engaged and excited about computer science
   
@@ -36,12 +34,11 @@
   You're unlocking an entirelly new way of thinking that'll let you do things that very, very few people can, and even if you don't end up being a programmer professionally, 
   this is a skill that'll set you apart in nearly any field you can think of. It'll take a lot of hard work, but I promise you that it's worth it.  
   
-  ## Polls (5 mins) 
+  ## Polls (5 mins)
+  * Previous experience coding 
+  * Projects that kids would be interested in 
+  * Preliminary questions, concerns
   
-    *Previous experience coding 
-    *Projects that kids would be interested in 
-    *Preliminary questions, concerns
-    
   ## Course Outline (10-15 mins) 
   
   * (Syllabus reading, sorry) 
@@ -50,7 +47,33 @@
   
   ## Expo set-up (20 mins) 
   
+  * Snack is an incredible system that allows you to write code and then it immediately updates on your phone. In the byegone days, this would take way, way more time. 
+  
+  (Provide tech support)  
+  
   1. Go to snack.expo.io
-  2. Click upper right sillo
+  2. Click upper right silhouette
+  3. login->sign up 
+  4. create account
+  5. Snacks -> new Snack 
   
-  
+  6. Download Expo Client on your phone 
+  7. Scan QR code. Alternatively sign in with your account and select your project. 
+  8. In the <text> tag, write 'Hello World!' or some message of your choice.  
+ **Congratulations, you just made your first app!**
+ * If kids finish early they can mess around until everybody gets caught up. 
+ 
+ ## Asset Demo (if time allows) 
+ 
+ 1. download a picture from internet
+ 2. drag it into editor 
+ 3. delete snack-icon.png in asset folder
+ 4. rename your image snack-icon.png, move it to asset folder
+ 5. Might need to update the text to see  
+ 
+ **Wow, that picture's on your phone!**
+ 
+ ## Conclusion (2 mins) 
+ 
+ * Thanks for coming to class, super excited, React is a super cool technology that'll let you make some professional apps very quickly and easily. 
+ * Next week, we'll be looking at what we wrote today actually works (via HTML and CSS) 
