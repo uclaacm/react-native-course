@@ -2,28 +2,62 @@
 
 In this lesson, we'll walk you through what you'll be learning in the course, why it's useful, and get a brief taste of what's to come!
 
-##
+## What's the point of this class?
+
+Very broadly, this class is about **helping you**. We're really passionate about helping students - beyond just teaching you about React Native, or mobile app development, or whatever. If you have any questions about anything, please please please ask us!
+
+Slightly more narrowly, we want you to come away with a few skills:
+
+* **problem solving**: how can we break down large problems into small, easy problems? How can we use computers to help us do this?
+* **programming fundamentals**: how can we use JavaScript to tell computers to do things for us? Beyond JS, what are common ways to communicate with computers?
+* **practice with real-world development**: how do people write code in real-life? how do things like collaboration work with code?
+
+More narrowly, our class's curriculum is focused on teaching you a few core technologies:
+
+* **HTML** - the language that defines the structure of websites
+* **CSS** - the language that defines the look and layout of websites
+* **JavaScript (JS)** - the programming language that makes websites *interactive*; we'll use JavaScript heavily!
+* **React + React Native + Expo** - a set of programming libraries that make mobile app developmentvery easy. React Native uses JavaScript!
+* **GitHub** - a service based on a technology (git) that helps you keep track of your code and show it off to other people!
+
+By the end of the class, our goal is to have you walk away with **real projects**. At the end of the year, we're aiming for you to have created:
+
+* a personal website
+* a BuzzFeed-style quiz
+* a data visualisation app
+* your own, completely new app!
+
+Wow, that was a lot of bullet points. If you have any more questions, feel free to ask us; we'll also have a more formal course outline in a bit.
+
+## How will this class work?
+
+Our class is more **project-based** and **hands-on** and less *theoretical* or *lecture-styled*. That means a few things: during lectures, we'll spend much more time live-coding (and hope that you'll do it with us); instead of reading textbooks or long notes on JS or app development, we'll focus on you learning things by *you practicing those things*. That does mean that, in order to get the most out of this course, **you do need to practice**. Hopefully, you'll enjoy practicing with us!
+
+It also means that a lot of the concepts we'll cover at the beginning of the course might be confusing, which is totally okay! Trust us, when we first learned these things, we felt the exact same way. Over time, we'll work with you to conquer these scary concepts and make you a web and mobile app development master!
+
+This class is supposed to be fun and low-stress! That means: **no grading**, **no mandatory homework**, and **time to work on your projects in-class**. We'll provide lots of optional resources to guide you on your journey: extra videos, optional homework, and next steps, but only put in how much time you can!
+
+All of our class resources will be posted in this GitHub repository (except live recordings, which we're not allowed to post). You can always send us an email (at [acmteachla@gmail.com](mailto:acmteachla@gmail.com)) if something is missing, wrong, or if you're confused!
+
+## Why are we learning ____?
+
+As a note, this section is a bit more in-depth on technology and curriculum than we expect from students. Don't worry about it if these things don't make sense to you!
+
+### Why JavaScript
+
+### Why Mobile & Web App Development
+
+### Why React & React Native & Expo?
+
+We chose the React + React Native + Expo stack for a few reasons:
+
+* **instant feedback**: compared to other app development methods that require lots of tooling and compile times (e.g. native Swift, native Java, Koitlin), our stack lets see students **see changes instantly**. We think this is really important in connecting the code to the product!
+* **cross-platform**: we don't have to worry about the hardware the students have: iOS, Android, or no phone, everybody can participate!
+* **broad applications**: choosing a web-focused stack gives us the opportunity to provide both web and mobile development opportunities!
+* **course familiarity**: students have already explored JavaScript from APCSP standards. Compare this to Flutter/native iOS/native Android that all require different languages (Dart/Swift/Java)!
 
 ## Course Philosophy and Overview (10 mins)
 
-* We've been developing this course with the help of facebook over the past year and a ton of thought has been put into what we're teaching you,
-why the stuff we're teaching you is relevant, and the best way to teach you these things while still making sure you guys stay engaged and excited about computer science
-
-* There are many valid ways to learn Computer Science, and different people will gravitate toward different modalities of learning. (Chase and I, for example...)
-One of the most important questions we had to answer for designing this class was *What's the best way to make sure that what we're teaching is compelling*
-* Originally this class was designed to be more like a traditional CS class, where we explain important concepts in detail first, and then give you examples and excersises later,
-but a big issue with lecturing is that it's just kinda boring, and with this class being online, it'd be even more difficult to keep you guys engaged, so we decided to switch things up.
-
-* We decided to make this class project based, which means we're going to be doing some live coding so that you guys can immediately see the power of what you're learning.
-We think that the motivation from being able to create something cool from the start will make sure that you guys have a really good time in this class and'll hopefully inspire
-you guys to want to learn more outside of our weekly class.
-You won't immediately understand everything that you're writing, but I promise that we will be explaining everything that you need to know, so you'll come away with both
-hands-on experience and a good handle on some core computer science principles.
-
-* We're super excited about the tech that we're gonna be using during this class, the core of which is called **React**, and its mobile counterpart **React Native**. React is
-a system that lets you build really really good websites quickly and easily with javascript, and React Native is a system that lets you build really really good apps quickly and
-easily with javascript. One of the coolest things about React Native is that it lets you build cross-platform apps, which means you don't need to write one app in java for android
-and one app in swift for apple, it's one codebase for both, and that *saves you a ton of time*.
 
 * One incredibly important thing to keep in mind is that thinking programmatically (That is, being able to translate your thoughts into code) is super difficult at first,
 and you can't expect yourself to be able to do it right away. If you get discouraged at any point, try to remember how impressive what you're doing is.
