@@ -16,6 +16,8 @@ Hi, my name is Chase, I'm a 2nd year Computer Science student at UCLA.
 
 Super excited to teach this class, I actually never got the opportunity to take a CS class until I got college so I'm super happy that you guys are getting some early exposure to some super interesting and relevant technologies that I use almost every day.
 
+First and foremost I'm here to support you, so if you have any questions or concerns, don't hesistate to reach out. [chasekap@gmail.com](mailto:chasekap@gmail.com)
+
 ## Teach LA President: Matt
 
 Hey there, my name is Matt! I'm a 3rd-year Computer Science & Math-Economics double major at UCLA, and I'm particularly passionate about how we can use computers to empower people!
