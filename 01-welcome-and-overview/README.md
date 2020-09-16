@@ -1,15 +1,8 @@
 # Lesson 1: Welcome & Course Overview
 
-## Instructor Intro (5 mins)
+In this lesson, we'll walk you through what you'll be learning in the course, why it's useful, and get a brief taste of what's to come!
 
-* Hi, my name is Chase, I'm a 2nd year Computer Science student at UCLA. [bio stuff?]
-Super excited to teach this class, I actually never got the opportunity to take a CS class until I got college so I'm super happy that you guys are getting
-some early exposure to some super interesting and relevant technologies that I use almost every day.
-* [Matt stuff]
-* TEACHLA is a student-led organization at UCLA that aims to provide mentorship and support to students who want to pursue computer science,
-either academically or as a career. We believe super strongly that having the opportunity to learn about computer science is extremely valuable,
-and our goal is to make those opportunites as accessable as possible.
-
+##
 
 ## Course Philosophy and Overview (10 mins)
 
