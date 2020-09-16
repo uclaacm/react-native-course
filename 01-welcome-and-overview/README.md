@@ -22,8 +22,8 @@ One of the most important questions we had to answer for designing this class wa
 but a big issue with lecturing is that it's just kinda boring, and with this class being online, it'd be even more difficult to keep you guys engaged, so we decided to switch things up.
 
 * We decided to make this class project based, which means we're going to be doing some live coding so that you guys can immediately see the power of what you're learning.
-We think that the motivation from being to create something cool from the start will make sure that you guys have a really good time in this class and'll hopefully inspire
-you guys to want to learn this outside of our weekly class.
+We think that the motivation from being able to create something cool from the start will make sure that you guys have a really good time in this class and'll hopefully inspire
+you guys to want to learn more outside of our weekly class.
 You won't immediately understand everything that you're writing, but I promise that we will be explaining everything that you need to know, so you'll come away with both
 hands-on experience and a good handle on some core computer science principles.
 
