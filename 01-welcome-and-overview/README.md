@@ -55,17 +55,28 @@ https://docs.google.com/document/d/1c1tZGzy3m9kLpzrR6sEkx4MDKSrUbYDiub1x_Hyy8yk/
 
 6. Download Expo Client on your phone
 7. Scan QR code. Alternatively sign in with your account and select your project.
-8. In the <text> tag, write 'Hello World!' or some message of your choice.
+8. In the text tag, write 'Hello World!' or some message of your choice.
+```
+return (
+    <View style={styles.container}>
+      <Text style={styles.paragraph}>
+        Change code in the editor and watch it change on your phone! Save to get a shareable url.
+      </Text>
+      <Card>
+        <AssetExample />
+      </Card>
+    </View>
+  );
+```
 **Congratulations, you just made your first app!**
 * If kids finish early they can mess around until everybody gets caught up.
 
 ## Asset Demo (if time allows)
 
 1. download a picture from internet
-2. drag it into editor
-3. delete snack-icon.png in asset folder
-4. rename your image snack-icon.png, move it to asset folder
-5. Might need to update the text to see
+2. drag it into editor and 'assets' folder
+3. Click on components/AssetExample.js
+4. Change ```<Image style={styles.logo} source={require('../assets/snack-icon.png')} />``` to ```<Image style={styles.logo} source={require('../assets/myImage.png')} />```
 
 **Wow, that picture's on your phone!**
 
