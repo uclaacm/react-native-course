@@ -15,18 +15,19 @@ This course was originally developed by ACM Teach LA in conjunction with North H
   * [Who can take this course?](#who-can-take-this-course)
   * [Who's teaching this course?](#whos-teaching-this-course)
   * [Are there video recordings?](#are-there-video-recordings)
-* [A Note on Course Philosophy](#a-note-on-course-philosophy)
 * [Licensing and Attribution](#licensing-and-attribution)
 
 ## Lessons
 
 Here's a roadmap for all of the content that we cover, week-by-week:
 
-1. Week 1: Course Outline & Intro to Snack
+1. [Week 1: Welcome & Course Overview + Quick Snack Demo](https://github.com/uclaacm/react-native-course-20-21/tree/master/01-welcome-and-overview)
 
 (more coming soon!)
 
 ## Frequently Asked Questions
+
+Is your question not answered here? Send us an email at [acmteachla@gmail.com](mailto:acmteachla@gmail.com)!
 
 ### Is this free to use?
 
@@ -34,15 +35,19 @@ Yup, absolutely! Everything we've done for this course is free and open-source, 
 
 ### What will I learn?
 
+See the [welcome and overview lesson](https://github.com/uclaacm/react-native-course-20-21/tree/master/01-welcome-and-overview) or our course packet (coming soon!) for more information.
+
 ### Who can take this course?
 
+Anybody is welcome to look through our notes and other course material! We developed these notes specifically for an APCSP class at North Hollywood High School, for students with **little to no previous programming experience**. However, we taught this in conjunction with a class on Javascript basics, which gave us the leeway to skip over some JS fundamentals.
+
 ### Who's teaching this course?
+
+We're a group of UCLA students (in an organization called [ACM Teach LA](https://teachla.uclaacm.com)) who love teaching people about just how *awesome* computer science is! See more [on our team note](https://github.com/uclaacm/react-native-course-20-21/tree/master/00-course-team) or [learn more about ACM Teach LA](https://teachla.uclaacm.com).
 
 ### Are there video recordings?
 
 Unfortunately, due to LAUSD policies we are unable to record live offerings of our course. However, if you have any questions, we encourage you reach out to us (either [on GitHub](https://github.com/uclaacm/react-native-course-20-21/issues) or via email at [acmteachla@gmail.com](mailto:acmteachla@gmail.com)).
-
-## A Note on Course Philosophy
 
 ## Licensing and Attribution
 
