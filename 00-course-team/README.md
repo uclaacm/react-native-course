@@ -30,6 +30,12 @@ I've done web development (and other CS things) at startups, medium-sized compan
 
 ## Instructor: Lisha
 
+Hi, I'm Lisha! I'm a 3rd year at UCLA studying Computer Science. 
+
+I actually started my journey with CS by taking AP CSP in my senior year of high school, which is what convinced me to pursue CS in college! So I'm super excited to join you guys and teach you some skills that will help you take what you learn in this class to another level.
+
+If you have questions about anything at all or just want to say hi, please feel free to email me at [lisha4mohan@yahoo.com](mailto:lisha4mohan@yahoo.com)!
+
 ## Instructor: Param
 
 ## About Teach LA
