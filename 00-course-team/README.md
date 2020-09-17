@@ -30,7 +30,7 @@ I've done web development (and other CS things) at startups, medium-sized compan
 
 ## Instructor: Lisha
 
-Hi, I'm Lisha! I'm a 3rd year at UCLA studying Computer Science. 
+Hi, I'm Lisha! I'm a 3rd year at UCLA studying Computer Science.
 
 I actually started my journey with CS by taking AP CSP in my senior year of high school, which is what convinced me to pursue CS in college! So I'm super excited to join you guys and teach you some skills that will help you take what you learn in this class to another level.
 
@@ -39,3 +39,5 @@ If you have questions about anything at all or just want to say hi, please feel 
 ## Instructor: Param
 
 ## About Teach LA
+
+ACM Teach LA is a 501(c)(3) nonprofit at UCLA that looks to provide equitable access to K-12 computer science education in Los Angeles. We teach weekly classes on topics ranging from intro Scratch and Python to AI & Machine Learning; we run one-off events on a range of topics like diversity in tech, CS in college, cybersecurity, bias in machine learning, and more; and, we write software to make education easier and more engaging. You can find out more about ACM Teach LA [at our website](https://teachla.uclaacm.com).

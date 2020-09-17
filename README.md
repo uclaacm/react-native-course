@@ -15,6 +15,7 @@ This course was originally developed by ACM Teach LA in conjunction with North H
   * [Who can take this course?](#who-can-take-this-course)
   * [Who's teaching this course?](#whos-teaching-this-course)
   * [Are there video recordings?](#are-there-video-recordings)
+* [About Teach LA](#about-teach-la)
 * [Licensing and Attribution](#licensing-and-attribution)
 
 ## Lessons
@@ -39,7 +40,7 @@ See the [welcome and overview lesson](https://github.com/uclaacm/react-native-co
 
 ### Who can take this course?
 
-Anybody is welcome to look through our notes and other course material! We developed these notes specifically for an APCSP class at North Hollywood High School, for students with **little to no previous programming experience**. However, we taught this in conjunction with a class on Javascript basics, which gave us the leeway to skip over some JS fundamentals.
+Anybody is welcome to look through our notes and other course material! We developed these notes specifically for an AP CSP class at North Hollywood High School, for students with **little to no previous programming experience**. However, we taught this in conjunction with a class on Javascript basics, which gave us the leeway to skip over some JS fundamentals.
 
 ### Who's teaching this course?
 
@@ -49,8 +50,14 @@ We're a group of UCLA students (in an organization called [ACM Teach LA](https:/
 
 Unfortunately, due to LAUSD policies we are unable to record live offerings of our course. However, if you have any questions, we encourage you reach out to us (either [on GitHub](https://github.com/uclaacm/react-native-course-20-21/issues) or via email at [acmteachla@gmail.com](mailto:acmteachla@gmail.com)).
 
+## About Teach LA
+
+ACM Teach LA is a 501(c)(3) nonprofit at UCLA that looks to provide equitable access to K-12 computer science education in Los Angeles. We teach weekly classes on topics ranging from intro Scratch and Python to AI & Machine Learning; we run one-off events on a range of topics like diversity in tech, CS in college, cybersecurity, bias in machine learning, and more; and, we write software to make education easier and more engaging. You can find out more about ACM Teach LA [at our website](https://teachla.uclaacm.com).
+
 ## Licensing and Attribution
 
-These notes were written by Teach LA's curriculum team: special thanks to Matthew Wang ([@malsf21](https://github.com/malsf21)) and Chase Kapler ([@chasekap](https://github.com/chasekap))!
+These notes were written by Teach LA's curriculum team. Say hi to our instructors [on the course team page](https://github.com/uclaacm/react-native-course-20-21/tree/master/00-course-team)!
+
+We've derived inspiration from numerous open-source curriculum, and are forever grateful. Particular thanks to the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) and the notes + videos from [ACM @ UCLA's Summer Web Dev Crash Course](https://github.com/uclaacm/learning-lab-crash-course-su20).
 
 These notes are published with the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) ([link to legal](https://creativecommons.org/licenses/by/4.0/legalcode)), and all of the code samples with the MIT License. You are free to use them however you wish. If you do, let us know - we'd love to know how you used them, and how we can make them better.

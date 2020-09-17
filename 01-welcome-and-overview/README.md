@@ -30,24 +30,23 @@ More narrowly, our class's curriculum is focused on teaching you a few core tech
 * **HTML** - the language that defines the structure of websites
 * **CSS** - the language that defines the look and layout of websites
 * **JavaScript (JS)** - the programming language that makes websites *interactive*; we'll use JavaScript heavily!
-* **React + React Native + Expo** - a set of programming libraries that make mobile app developmentvery easy. React Native uses JavaScript!
+* **React + React Native + Expo** - a set of programming libraries that make mobile app development very easy. React Native uses JavaScript!
 * **GitHub** - a service based on a technology (git) that helps you keep track of your code and show it off to other people!
 
 By the end of the class, our goal is to have you walk away with **real projects**. At the end of the year, we're aiming for you to have created:
 
 * a personal website
 * a BuzzFeed-style quiz
-* a data visualisation app
+* a data visualization app
 * your own, completely new app!
 
 Wow, that was a lot of bullet points. If you have any more questions, feel free to ask us; we'll also have a more formal course outline in a bit.
 
 ### A note on thinking programatically
 
-One incredibly important thing to keep in mind is that thinking programmatically (That is, being able to translate your thoughts into code) is super difficult at first,
-and you can't expect yourself to be able to do it right away. If you get discouraged at any point, try to remember how impressive what you're doing is.
-You're unlocking an entirelly new way of thinking that'll let you do things that very, very few people can, and even if you don't end up being a programmer professionally,
-this is a skill that'll set you apart in nearly any field you can think of. It'll take a lot of hard work, but I promise you that it's worth it.
+An important concept we'll cover is **thinking programatically**: the ability to break down problems and to translate thoughts into code. We'll work on this throughout the course, primarily through project-based development.
+
+This is a very tough skill - nobody is born naturally with it - but we'll work on it over time! If you ever feel lost or discouraged, remember just how impressive what you're doing is: you're unlocking an entirely new way of thinking and an entirely new form of communication! Even if you don't end up being a programmer professionally, this is a unique skill that sets you apart in almost any field you can think of. It may take a lot of hard work, but trust us: it's worth it.
 
 ## How will this class work?
 
@@ -55,7 +54,7 @@ Our class is more **project-based** and **hands-on** and less *theoretical* or *
 
 It also means that a lot of the concepts we'll cover at the beginning of the course might be confusing, which is totally okay! Trust us, when we first learned these things, we felt the exact same way. Over time, we'll work with you to conquer these scary concepts and make you a web and mobile app development master!
 
-This class is supposed to be fun and low-stress! That means: **no grading**, **no mandatory homework**, and **time to work on your projects in-class**. We'll provide lots of optional resources to guide you on your journey: extra videos, optional homework, and next steps, but only put in how much time you can!
+This class is supposed to be fun and low-stress! That means: **no grading**, **no mandatory homework**, and **no required reading**. We plan on giving you **lots of time to work on your projects in class**, and the opportunity to **ask us if you have any questions about, well, anything**. We'll also provide lots of optional resources to guide you on your journey: extra videos, optional homework, and next steps, but only put in how much time you can!
 
 All of our class resources will be posted in this GitHub repository (except live recordings, which we're not allowed to post). You can always send us an email (at [acmteachla@gmail.com](mailto:acmteachla@gmail.com)) if something is missing, wrong, or if you're confused!
 
@@ -68,7 +67,7 @@ As a note, this section is a bit more in-depth on technology and curriculum than
 Two, brief reasons:
 
 1. JavaScript is a very popular language: it underpins the entire internet, and can be used for many different things (frontends, servers, games, apps, scripts, etc.)
-2. JavaScript is part of the existing APCSP curriculum in schools that we work with
+2. JavaScript is part of the existing AP CSP curriculum in schools that we work with
 
 There are many problems with JavaScript too - but don't worry, we'll still have a good time.
 
@@ -78,7 +77,7 @@ Simply put, mobile & web application development is an **impactful** way for stu
 
 Mobile and web app development are also **widely-applicable** skills: they're extremely hireable skills, and cross-disciplinary - everybody needs a website!
 
-And finally, it's easy to learn. Unlike AI & ML, cryptography, or lower-level systems programming, web and mobile app development **require zero prior math experience** and **no understanding of computer architecture or complex computer systems**. This makes it a very accessible entrypoint into the wonderful world of software development.
+And finally, it's easy to learn. Unlike AI & ML, cryptography, or lower-level systems programming, web and mobile app development **require zero prior math experience** and **no understanding of computer architecture or complex computer systems**. This makes it a very accessible entry point into the wonderful world of software development.
 
 ### Why React & React Native & Expo?
 
@@ -87,7 +86,7 @@ We chose the React + React Native + Expo stack for a few reasons:
 * **instant feedback**: compared to other app development methods that require lots of tooling and compile times (e.g. native Swift, native Java, Koitlin), our stack lets see students **see changes instantly**. We think this is really important in connecting the code to the product!
 * **cross-platform**: we don't have to worry about the hardware the students have: iOS, Android, or no phone, everybody can participate!
 * **broad applications**: choosing a web-focused stack gives us the opportunity to provide both web and mobile development opportunities!
-* **course familiarity**: students have already explored JavaScript from APCSP standards. Compare this to Flutter/native iOS/native Android that all require different languages (Dart/Swift/Java)!
+* **course familiarity**: students have already explored JavaScript from AP CSP standards. Compare this to Flutter/native iOS/native Android that all require different languages (Dart/Swift/Java)!
 
 ### Why GitHub?
 
