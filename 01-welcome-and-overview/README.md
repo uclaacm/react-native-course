@@ -1,5 +1,7 @@
 # Lesson 1: Welcome & Course Overview
 
+[Link to related slides](https://docs.google.com/presentation/d/1IrlE_tbKXar6su-mNUVIlX-BrsCk8KVM9fitO11ECOY/edit?usp=sharing).
+
 In this lesson, we'll walk you through what you'll be learning in the course, why it's useful, and get a brief taste of what's to come!
 
 * [What's the point of this class?](#whats-the-point-of-this-class)
