@@ -28,6 +28,12 @@ I've done web development (and other CS things) at startups, medium-sized compan
 
 ## Instructor: Evan
 
+Hey all! I'm a 2nd year student at UCLA currently studying Computer Science.
+
+I love web development and think it's one of the most accessible forms of technology. Super stoked that you all get to learn about web and mobile development in high school, something my school district didn't offer. I'm also passionate about making tech hiring more equitable and efficient, and think getting an early introduction to the tools and concepts that this class covers is extremely important.
+
+Hope to meet you all virtually in class. Please don't hesistate to reach out to me at [evanzhong@ucla.edu](mailto:evanzhong@ucla.edu) if you have any questions, feedback, or just want to talk.
+
 ## Instructor: Lisha
 
 Hi, I'm Lisha! I'm a 3rd year at UCLA studying Computer Science.
