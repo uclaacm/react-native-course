@@ -4,34 +4,34 @@ In this lesson, we'll take our first look at the building blocks of the web: **H
 
 
 ## On Hacking TikTok (the Structure of a Webpage)
-![Whoops](images/inspectele.png)  
+![Whoops](images/inspectele.png)
 
-They were right, as it turns out. If an app with access to all of your personal data can be hacked by a single college student, surely it's too dangerous to be on your phone.  
+They were right, as it turns out. If an app with access to all of your personal data can be hacked by a single college student, surely it's too dangerous to be on your phone.
 
-Except there's a trick! We haven't actually hacked TikTok, if you can believe it. If you navigate to tiktok.com yourself, you can see that our "hack" has been reverted. So what did we do?  
+Except there's a trick! We haven't actually hacked TikTok, if you can believe it. If you navigate to tiktok.com yourself, you can see that our "hack" has been reverted. So what did we do?
 
 Let's highlight some text with our cursor, and then right click, and then click **"inspect"**
 
-![Your page should look something like this](images/inspected.png)  
+![Your page should look something like this](images/inspected.png)
 
-If you remember from last week, what we're looking at right now is the HTML code for TikTok.com. HTML dictates the layout of the page, essentially what and where our browser displays things.  
+If you remember from last week, what we're looking at right now is the HTML code for TikTok.com. HTML dictates the layout of the page, essentially what and where our browser displays things.
 
-To replicate our "hack", all we need to do is modify the element that displays "Make your Day" in big black letters.  
+To replicate our "hack", all we need to do is modify the element that displays "Make your Day" in big black letters.
 
-```<h1 class="slogan">Make Your Day</h1>```  
+```<h1 class="slogan">Make Your Day</h1>```
 
-We'll explain how HTML actually works in a bit, but all you need to do is replace *"Make your Day"* with any other text and it should update instantly.  
+We'll explain how HTML actually works in a bit, but all you need to do is replace *"Make your Day"* with any other text and it should update instantly.
 
-If you mouse around the HTML, you can see the corresponding elements on the page getting highlighted. Clearly there's a lot going on here.  
+If you mouse around the HTML, you can see the corresponding elements on the page getting highlighted. Clearly there's a lot going on here.
 
 There’s a bar at the top (called a header) and inside that bar, there’s links to other pages. There’s a main part of the page (called a body) and inside of that are some blobs of text, and they’re all formatted differently. There’s a part to the side (called a sider) with some dropdown menus. There's a part toward the bottom (called a footer) with even more links and important information.
 
-As you can probably imagine, this can get super messy and hard to keep track of if we don’t have a simple and easy way to represent this in code.   
+As you can probably imagine, this can get super messy and hard to keep track of if we don’t have a simple and easy way to represent this in code.
 
-When you’re coding in HTML, you’re basically **describing** to the computer what you want your webpage to look like. You don’t really care *how* the computer does it, you just need it to give you something that meets your exact specifications.  
+When you’re coding in HTML, you’re basically **describing** to the computer what you want your webpage to look like. You don’t really care *how* the computer does it, you just need it to give you something that meets your exact specifications.
 
-If your computer spoke english, maybe you’d say something like  
-‘I need a block at the top that’s 20 pixels high, and then one below that that takes up most of the page, and oh, I need a small section of that block to have a picture of myself. And then at the bottom i want another block that’s ten pixels high’ 
+If your computer spoke english, maybe you’d say something like
+‘I need a block at the top that’s 20 pixels high, and then one below that that takes up most of the page, and oh, I need a small section of that block to have a picture of myself. And then at the bottom i want another block that’s ten pixels high’
 
 But your computer doesn't speak english, which makes things harder for us, but it helps in one really big way: using HTML correctly means you’ll get exactly what you want (There’s no ambiguity), which means it’s a super powerful tool. Let’s look at how to actually code…
 
@@ -92,4 +92,68 @@ Well, the nice thing about our class is that we can just try this out. So, let's
 <h3>What about h3?</h3>
 <h9000>Or h9000?</h9000>
 <matt>I wonder... can I put anything inside the tags?</matt>
+```
+
+## CSS, a Primer
+
+Okay, so we know there are a few ways to style elements on our page. But how exactly do we do it?
+
+Let's take a look at a very simple CSS declaration:
+
+```css
+.red-text {
+  color: red;
+}
+```
+
+```html
+<p class="red-text">this text will be red!</p>
+```
+
+This is a *CSS class declaration*; you might guess that it makes text red, and you'd be right!
+
+There are a few things we should break down on how exactly this works. Don't stress about the names - the concepts or what matters!
+
+1. The `.red-text` is called the *selector*, and it says what the style applies to. In this case, it applies to anything that we name `red-text` - which we did with `class`
+2. Then, there are a few things in between our braces, `{` and `}` - these are the styles that will be applied!
+3. Each line of CSS within the braces is of the form `PROPERTY:VALUE;`:
+    * the property is the `color`
+    * then, we have a `:` - this is mandatory
+    * then, we have the value, in this case, `red`
+    * finally, we have the semicolon, `;`
+
+This takes a lot of time to get used to, so don't overstress about it! The best way to get better with this is with practice.
+
+Let's add on to our example:
+
+```css
+.large-red-text {
+  color: red;
+  font-size: 30px;
+}
+```
+
+```html
+<p class="large-red-text">this text will be large and red!</p>
+```
+
+We've introduced a new CSS property, `font-size`: its value can be in `px`, a unit tied to the pixels on your screen.
+
+We can have multiple classes, and apply them to different elements:
+
+```css
+.red-text {
+  color: red;
+}
+.blue-text {
+  color: blue;
+}
+.large-text {
+  font-size: 30px;
+}
+```
+
+```html
+<p class="blue-text">this text will be blue!</p>
+<p class="blue-text large-text">this text will be large and blue!</p>
 ```
