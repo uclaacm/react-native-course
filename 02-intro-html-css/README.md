@@ -94,6 +94,36 @@ Well, the nice thing about our class is that we can just try this out. So, let's
 <matt>I wonder... can I put anything inside the tags?</matt>
 ```
 
+## Foundational HTML Tags
+After playing around with your `page.html` file, you may have noticed that not all words are recognized as tags.
+
+For example `<matt></matt>` is not a valid tag, as much as we want it to be. Why isn't `<matt>` a tag? This isn't right. What kind of secret society gets to decide these things?
+
+Put simply, all the web browsers have decided upon a HTML **standard**. Think of the standard as a rulebook for browsers that says something like:
+
+> We'll support the `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags, but NOT the `<h7>`, `<h8>`, or `<matt>` tags.
+
+This means we have to learn the foundational tags that the standard outlines. Let's dive into that.
+
+We will start with HTML headings. Let's try out all the heading sizes supported by html5. Try typing the code below into your `page.html` file. (Don't copy paste! It's easier to remember the syntax when you type)
+
+```html
+<h1>This is the largest heading</h1>
+<h2>This one is slightly smaller</h2>
+<h3>This one is even smaller</h3>
+<h4>They're getting tiny now!</h4>
+<h5>This one is very unimportant</h5>
+<h6>Can you even read this now?</h6>
+```
+
+You should get something that looks like:
+
+![All the heading tags supported by html5 -- look at the hierarchical structure!](images/heading-hierarchy.png)
+
+Do you notice anything? The font size gets smaller to indicate that certain text is less important than others. Your eyes are naturally guided towards the largest text first, then the next largest and so on. Neat huh?
+
+This isn't a coincidence: HTML is structured in such a way where information and tags are ranked one above the other according to importance. This is called the `HTML Hierarchy` (Fancy word alert! Remember this, it will come up again later)
+
 ## CSS, a Primer
 
 Okay, so we know there are a few ways to style elements on our page. But how exactly do we do it?
