@@ -124,6 +124,24 @@ Do you notice anything? The font size gets smaller to indicate that certain text
 
 This isn't a coincidence: HTML is structured in such a way where information and tags are ranked one above the other according to importance. This is called the `HTML Hierarchy` (Fancy word alert! Remember this, it will come up again later)
 
+### Paragraphs and images
+
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/01/page.html) into your `page.html`
+
+What if you wanted to write lengthier text? Say you wanted to write a book or a paragraph that explains why Matt is so great and how he was cheated out of his own html tag. Or maybe we want to serenade Chase about how he's such a cool person and a fantastic teacher.
+
+Let's add the following code to our `page.html` file
+
+```html
+<p>This is a paragraph, wow!</p>
+<p>Let's write about Matt and Chase now.</p>
+<p>What if you wanted to write lengthier text? Say you wanted to write a book or a paragraph that explains why Matt is so great and how he was cheated out of his own html tag. Or maybe we want to serenade Chase about how he's such a cool person and a fantastic teacher.</p>
+```
+
+This should result in something like:
+![Paragraphs in html](images/paragraphs.png)
+
+Note how the paragraphs naturally have line breaks between them, even though we don't have any in our code. This is a great example of how HTML is _telling_ the browser how to display your information.
 ## Styling
 
 Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the style -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in! 
