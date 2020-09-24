@@ -93,8 +93,8 @@ Well, the nice thing about our class is that we can just try this out. So, let's
 <h9000>Or h9000?</h9000>
 <matt>I wonder... can I put anything inside the tags?</matt>
 ```
-
 ## Foundational HTML Tags
+
 After playing around with your `page.html` file, you may have noticed that not all words are recognized as tags.
 
 For example `<matt></matt>` is not a valid tag, as much as we want it to be. Why isn't `<matt>` a tag? This isn't right. What kind of secret society gets to decide these things?
@@ -123,6 +123,61 @@ You should get something that looks like:
 Do you notice anything? The font size gets smaller to indicate that certain text is less important than others. Your eyes are naturally guided towards the largest text first, then the next largest and so on. Neat huh?
 
 This isn't a coincidence: HTML is structured in such a way where information and tags are ranked one above the other according to importance. This is called the `HTML Hierarchy` (Fancy word alert! Remember this, it will come up again later)
+
+## Styling
+
+Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the style -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in! 
+
+Before we dive right into it, we need to consider how we can use CSS with HTML. For starters, do we need to write our CSS in a separate file from our HTML code? The answer depends, as it turns out there’s actually several ways to use CSS with HTML. Let’s take a look at a couple of the most useful ways:
+
+* Inline CSS
+  * This is a way to write CSS directly into your HTML file, using the `style` attribute of HTML elements (more on this in a second!)
+* External CSS
+  * This involves writing CSS in a separate file. In practice, this is the most common and efficient way to use CSS with HTML. We’ll cover this method of using CSS later in the lesson!
+
+Don’t worry about the names or specifics of these methods -- we just need a high level overview so that we can get right to using CSS. And if you’re wondering which method is “better,” as we’ll see, each method has its pros and cons! We’re going to start with the inline method, since this is the easiest way to demonstrate and get started with CSS.
+
+As previously mentioned, the first step to adding inline CSS is to add a `style` attribute to the HTML element we want to customize. The value of the attribute is the particular CSS style(s) we want to apply. Here’s how this looks with HTML, minus the actual CSS: 
+
+```html
+<tagname style="some CSS!">text</tagname>
+```
+
+CSS allows us to specify styles using certain properties and values. The property is the type of style we want to change (e.g. color, size), and the value is the exact style we want (e.g. color can be red). The CSS syntax is fairly straightforward: 
+
+```css
+property:value;
+```
+
+Combining this with our HTML, we have:
+
+```html
+<tagname style="property:value;">text</tagname>
+```
+
+Not too bad so far! As you might imagine, [the list of properties we can use is huge](https://www.w3schools.com/cssref/). In addition, each property only accepts certain values, though most tend to be pretty intuitive. Here’s a quick rundown of a few essential CSS properties and some values they accept -- but if you’d rather see CSS in action and check out the specifics later, feel free to skip straight to the demonstration!
+
+* color
+  * Specifies the color of the text of an element
+  * Value can be a color keyword (e.g. `red`, `blue`, `orange`, and who could forget `papayawhip` and `lemonchiffon`) or hex code, RGB, and HSL (if you’re unfamiliar with these, don’t worry about it yet!)
+* background-color
+  * Specifies the color of the background of an element
+  * Value can be same as those for `color`
+* font-size
+  * Specifies the font size of text
+  * Value can be a keyword (e.g. `large`) or a number followed by one of various units. The most common of these is pixels, written as `px`
+* font-weight
+  * Specifies the degree of boldness of text
+  * Value can be a certain number or keyword (e.g. `bold`, `lighter`)
+* text-align
+  * Specifies the horizontal alignment of text
+  * Value can be a keyword (e.g. `left`, `right`, `center`)
+
+Now that we’ve got all that out of the way, we can start actually writing some CSS! Let’s start with a heading and change its color to blue:
+
+```html
+<h1 style=”color:blue;”>a blue heading!</h1>
+```
 
 ## CSS, a Primer
 
