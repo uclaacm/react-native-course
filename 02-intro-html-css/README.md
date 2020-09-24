@@ -126,7 +126,7 @@ This isn't a coincidence: HTML is structured in such a way where information and
 
 ## Styling
 
-Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the style -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in! 
+Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the *style* -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in! 
 
 Before we dive right into it, we need to consider how we can use CSS with HTML. For starters, do we need to write our CSS in a separate file from our HTML code? The answer depends, as it turns out there’s actually several ways to use CSS with HTML. Let’s take a look at a couple of the most useful ways:
 
@@ -137,13 +137,13 @@ Before we dive right into it, we need to consider how we can use CSS with HTML. 
 
 Don’t worry about the names or specifics of these methods -- we just need a high level overview so that we can get right to using CSS. And if you’re wondering which method is “better,” as we’ll see, each method has its pros and cons! We’re going to start with the inline method, since this is the easiest way to demonstrate and get started with CSS.
 
-As previously mentioned, the first step to adding inline CSS is to add a `style` attribute to the HTML element we want to customize. The value of the attribute is the particular CSS style(s) we want to apply. Here’s how this looks with HTML, minus the actual CSS: 
+As previously mentioned, the first step to adding inline CSS is to add the `style` attribute to the HTML element we want to customize. The value of the attribute is the particular CSS style(s) we want to apply. Here’s how this looks with HTML, minus the actual CSS: 
 
 ```html
 <tagname style="some CSS!">text</tagname>
 ```
 
-CSS allows us to specify styles using certain properties and values. The property is the type of style we want to change (e.g. color, size), and the value is the exact style we want (e.g. color can be red). The CSS syntax is fairly straightforward: 
+CSS allows us to specify styles using certain **properties** and **values**. The property is the type of style we want to change (e.g. color, size), and its value is the exact style we want (e.g. color can be red). The CSS syntax is fairly straightforward: 
 
 ```css
 property:value;
@@ -155,13 +155,13 @@ Combining this with our HTML, we have:
 <tagname style="property:value;">text</tagname>
 ```
 
-Not too bad so far! As you might imagine, [the list of properties we can use is huge](https://www.w3schools.com/cssref/). In addition, each property only accepts certain values, though most tend to be pretty intuitive. Here’s a quick rundown of a few essential CSS properties and some values they accept -- but if you’d rather see CSS in action and check out the specifics later, feel free to skip straight to the demonstration!
+Not too bad so far! As you might imagine, [the list of properties we can use](https://www.w3schools.com/cssref/) is huge. In addition, each property only accepts certain values, though most tend to be pretty intuitive. Here’s a quick rundown of a few essential CSS properties and some values they accept -- but if you’d rather see CSS in action and check out the specifics later, feel free to skip straight to the demonstration!
 
 * color
-  * Specifies the color of the text of an element
+  * Specifies the color of the *text* of an element
   * Value can be a color keyword (e.g. `red`, `blue`, `orange`, and who could forget `papayawhip` and `lemonchiffon`) or hex code, RGB, and HSL (if you’re unfamiliar with these, don’t worry about it yet!)
 * background-color
-  * Specifies the color of the background of an element
+  * Specifies the color of the *background* of an element
   * Value can be same as those for `color`
 * font-size
   * Specifies the font size of text
@@ -176,7 +176,16 @@ Not too bad so far! As you might imagine, [the list of properties we can use is 
 Now that we’ve got all that out of the way, we can start actually writing some CSS! Let’s start with a heading and change its color to blue:
 
 ```html
-<h1 style=”color:blue;”>a blue heading!</h1>
+<h1 style="color:blue;">a blue heading!</h1>
+```
+
+Let's see what else we can do!
+
+```html
+<a style="background-color:blanchedalmond;" href="https://teachla.uclaacm.com/">a fancy link</a>
+<p style="font-size:75px;">biiig text</p>
+<p style="font-weight:bold;">i'm feeling bold today</p>
+<footer style="text-align:center;color:green;">this footer is centered and green!</footer>
 ```
 
 ## CSS, a Primer
