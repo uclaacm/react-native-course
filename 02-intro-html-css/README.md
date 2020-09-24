@@ -173,6 +173,37 @@ These are known as HTML **attriutes**, which you can think of little nametags yo
 
 We'll cover more about attributes later today.
 
+### Explicit HTML structure
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/03/page.html) into your `page.
+
+Remember when we talked about the HTML hierarchy? Let's bring that back again.
+
+There are some special tags in HTML, ones that delinate specific sections of a webpage. You don't need to copy any of this down in `page.html` but it's usefuly just to follow along with the images below.
+
+```html
+<html>
+  <body>
+    <header>
+      This is some text in the header
+    </header>
+    This is some text in the main body
+    <footer>
+      This is some text in the footer
+    </footer>
+  </body>
+</html>
+```
+In the html hierarchy, the `<html>` tag tells the browser: "Hey the webpage begins here! Everything surrounded by the `<html>` tags is part of the webpage"
+
+The `<body>` tag tells the browser where to loook for the main content. Everything that the user will end up seeing should be in the `body` tag.
+
+`<header>` and `<footer>` indicate exactly what the words imply: a header at the top of a webpage and a footer at the bottom.
+
+Let's see what this hierarchy looks like visually:
+
+![an html wireframe](images/wireframe.png)
+Here you can see the header surrounded by a red border, the main text surrounded by a green border and the footer surrounded by a blue border. The body has a dashed black border, and the html has a solid yellow border
+
 ## Styling
 
 Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the style -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in! 
