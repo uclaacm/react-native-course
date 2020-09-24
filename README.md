@@ -23,6 +23,7 @@ This course was originally developed by ACM Teach LA in conjunction with North H
 Here's a roadmap for all of the content that we cover, week-by-week:
 
 1. [Week 1: Welcome & Course Overview + Quick Snack Demo](https://github.com/uclaacm/react-native-course-20-21/tree/master/01-welcome-and-overview)
+2. [Week 2: Intro to HTML & CSS](https://github.com/uclaacm/react-native-course-20-21/tree/master/02-intro-html-css)
 
 (more coming soon!)
 

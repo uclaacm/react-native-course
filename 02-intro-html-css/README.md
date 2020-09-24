@@ -2,6 +2,21 @@
 
 In this lesson, we'll take our first look at the building blocks of the web: **HTML** and **CSS**.
 
+*We recommend following along in [repl.it](https://repl.it/) or [codepen](https://codepen.io/) for this lesson!*
+
+* [On Hacking TikTok (the Structure of a Webpage)](#on-hacking-tiktok-the-structure-of-a-webpage)
+* [What are HTML &amp; CSS?](#what-are-html--css)
+* [Hello World: HTML](#hello-world-html)
+* [Foundational HTML Tags](#foundational-html-tags)
+  * [Paragraphs and Images](#paragraphs-and-images)
+  * [Links (or more formally known as Anchors)](#links-or-more-formally-known-as-anchors)
+  * [Explicit HTML structure](#explicit-html-structure)
+* [Styling](#styling)
+* [Classes and CSS](#classes-and-css)
+  * [Setting up a "Stylesheet"](#setting-up-a-stylesheet)
+  * [CSS Basics](#css-basics)
+* [Conclusion](#conclusion)
+
 
 ## On Hacking TikTok (the Structure of a Webpage)
 ![Whoops](images/inspectele.png)
@@ -105,9 +120,9 @@ Put simply, all the web browsers have decided upon a HTML **standard**. Think of
 
 > We'll support the `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags, but NOT the `<h7>`, `<h8>`, or `<matt>` tags.
 
-This means we have to learn the foundational tags that the standard outlines. Let's dive into that. (by the way we will be working with html5, which is just a version of HTML that uses a certain standard)
+This means we have to learn the foundational tags that the standard outlines. Let's dive into that. (by the way we will be working with HTML5, which is just a version of HTML that uses a certain standard)
 
-We will start with HTML headings. Let's try out all the heading sizes supported by html5. Try typing the code below into your `page.html` file. (Don't copy paste! It's easier to remember the syntax when you type)
+We will start with HTML headings. Let's try out all the heading sizes supported by HTML5. Try typing the code below into your `page.html` file. (Don't copy paste! It's easier to remember the syntax when you type)
 
 ```html
 <h1>This is the largest heading</h1>
@@ -120,7 +135,7 @@ We will start with HTML headings. Let's try out all the heading sizes supported 
 
 You should get something that looks like:
 
-![All the heading tags supported by html5 -- look at the hierarchical structure!](images/heading-hierarchy.png)
+![All the heading tags supported by HTML5 -- look at the hierarchical structure!](images/heading-hierarchy.png)
 
 Do you notice anything? The font size gets smaller to indicate that certain text is less important than others. Your eyes are naturally guided towards the largest text first, then the next largest and so on. Neat huh?
 
@@ -130,7 +145,7 @@ This isn't a coincidence: HTML is structured in such a way where information and
 
 > Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/01/page.html) into your `page.html`
 
-What if you wanted to write lengthier text? Say you wanted to write a book or a paragraph that explains why Matt is so great and how he was cheated out of his own html tag. Or maybe we want to serenade Chase about how he's such a cool person and a fantastic teacher.
+What if you wanted to write lengthier text? Say you wanted to write a book or a paragraph that explains why Matt is so great and how he was cheated out of his own HTML tag. Or maybe we want to serenade Chase about how he's such a cool person and a fantastic teacher.
 
 Let's add the following code to our `page.html` file
 
@@ -141,7 +156,7 @@ Let's add the following code to our `page.html` file
 ```
 
 This should result in something like:
-![Paragraphs in html](images/paragraphs.png)
+![Paragraphs in HTML](images/paragraphs.png)
 
 Note how the paragraphs naturally have line breaks between them, even though we don't have any in our code. This is a great example of how HTML is _telling_ the browser how to display your information.
 
@@ -156,9 +171,9 @@ Let's add the following code into our `page.html` file. It's okay to copy and pa
 You should now have a picture of matt on your webpage.
 
 ### Links (or more formally known as Anchors)
-> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/02/page.html) into your `page.
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/02/page.html) into your `page.html`
 
-What if we wanted to add a hyperlink to our webpage? Maybe a link to the [ACM TeachLA website](https://teachla.uclaacm.com/)?
+What if we wanted to add a hyperlink to our webpage? Maybe a link to the [ACM Teach LA website](https://teachla.uclaacm.com/)?
 
 We can do this with the `<a>` tag. Let's add it to our `page.html`
 ```html
@@ -171,16 +186,16 @@ You should now have that familiar blue underlined text we all know as links!
 
 But wait, why do the HTML tags for `<img>` and `<a>` have things inside of the tags? What are `href` and `src`?
 
-These are known as HTML **attributes**, which you can think of little nametags you add to HTML tags. For example the `href` and `src` attributes tell their html tags where to look to find the webpage or image respectively. In english `<a href="https://teachla.uclaacm.com/">` would roughly translate to "put a link that points to the teachLA website". 
+These are known as HTML **attributes**, which you can think of little nametags you add to HTML tags. For example the `href` and `src` attributes tell their HTML tags where to look to find the webpage or image respectively. In English `<a href="https://teachla.uclaacm.com/">` would roughly translate to "put a link that points to the teach LA website".
 
 We'll cover more about attributes later today.
 
 ### Explicit HTML structure
-> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/03/page.html) into your `page.
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/03/page.html) into your `page.html`
 
 Remember when we talked about the HTML hierarchy? Let's bring that back again.
 
-There are some special tags in HTML, ones that delinate specific sections of a webpage. You don't need to copy any of this down in `page.html` but it's usefuly just to follow along with the images below.
+There are some special tags in HTML, ones that delineate specific sections of a webpage. You don't need to copy any of this down in `page.html` but it's useful just to follow along with the images below.
 
 ```html
 <html>
@@ -195,20 +210,20 @@ There are some special tags in HTML, ones that delinate specific sections of a w
   </body>
 </html>
 ```
-In the html hierarchy, the `<html>` tag tells the browser: "Hey the webpage begins here! Everything surrounded by the `<html>` tags is part of the webpage"
+In the HTML hierarchy, the `<html>` tag tells the browser: "Hey the webpage begins here! Everything surrounded by the `<html>` tags is part of the webpage"
 
-The `<body>` tag tells the browser where to loook for the main content. Everything that the user will end up seeing should be in the `body` tag.
+The `<body>` tag tells the browser where to look for the main content. Everything that the user will end up seeing should be in the `body` tag.
 
 `<header>` and `<footer>` indicate exactly what the words imply: a header at the top of a webpage and a footer at the bottom.
 
 Let's see what this hierarchy looks like visually:
 
-![an html wireframe](images/wireframe.png)
-Here you can see the header surrounded by a red border, the main text surrounded by a green border and the footer surrounded by a blue border. The body has a dashed black border, and the html has a solid yellow border
+![an HTML wireframe](images/wireframe.png)
+Here you can see the header surrounded by a red border, the main text surrounded by a green border and the footer surrounded by a blue border. The body has a dashed black border, and the HTML has a solid yellow border
 
 ## Styling
 
-Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the *style* -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in! 
+Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the *style* -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in!
 
 Before we dive right into it, we need to consider how we can use CSS with HTML. For starters, do we need to write our CSS in a separate file from our HTML code? The answer depends, as it turns out there’s actually several ways to use CSS with HTML. Let’s take a look at a couple of the most useful ways:
 
@@ -219,13 +234,13 @@ Before we dive right into it, we need to consider how we can use CSS with HTML. 
 
 Don’t worry about the names or specifics of these methods -- we just need a high level overview so that we can get right to using CSS. And if you’re wondering which method is “better,” as we’ll see, each method has its pros and cons! We’re going to start with the inline method, since this is the easiest way to demonstrate and get started with CSS.
 
-As previously mentioned, the first step to adding inline CSS is to add the `style` attribute to the HTML element we want to customize. The value of the attribute is the particular CSS style(s) we want to apply. Here’s how this looks with HTML, minus the actual CSS: 
+As previously mentioned, the first step to adding inline CSS is to add the `style` attribute to the HTML element we want to customize. The value of the attribute is the particular CSS style(s) we want to apply. Here’s how this looks with HTML, minus the actual CSS:
 
 ```html
 <tagname style="some CSS!">text</tagname>
 ```
 
-CSS allows us to specify styles using certain **properties** and **values**. The property is the type of style we want to change (e.g. color, size), and its value is the exact style we want (e.g. color can be red). The CSS syntax is fairly straightforward: 
+CSS allows us to specify styles using certain **properties** and **values**. The property is the type of style we want to change (e.g. color, size), and its value is the exact style we want (e.g. color can be red). The CSS syntax is fairly straightforward:
 
 ```css
 property:value;
@@ -270,7 +285,9 @@ Let's see what else we can do!
 <footer style="text-align:center;color:green;">this footer is centered and green!</footer>
 ```
 
-Before we move on, there's one thing we need to note -- you may have noticed that certain HTML elements appear to already have their own styles. For example, text included in an `h1` tag is bigger and bolder than text in a `p` tag, even though we haven't specified those styles with CSS. This is because some elements have default CSS styles, which are often convenient -- typically, we'd like the heading to be big and bold. However, the styling differences between different tags are still the result of CSS, not HTML. Remember, styling is always done with CSS, not HTML -- if you want big and bold text that isn't intended to serve as a heading, you should use CSS and a more appropriate tag than `h1`. 
+> Checkpoint alert! If you fell behind no worries, check out the [code found here](checkpoints/04/page.html)
+
+Before we move on, there's one thing we need to note -- you may have noticed that certain HTML elements appear to already have their own styles. For example, text included in an `h1` tag is bigger and bolder than text in a `p` tag, even though we haven't specified those styles with CSS. This is because some elements have default CSS styles, which are often convenient -- typically, we'd like the heading to be big and bold. However, the styling differences between different tags are still the result of CSS, not HTML. Remember, styling is always done with CSS, not HTML -- if you want big and bold text that isn't intended to serve as a heading, you should use CSS and a more appropriate tag than `h1`.
 
 ## Classes and CSS
 
@@ -323,7 +340,7 @@ There are a few things we should break down on how exactly this works. Don't str
     * then, we have the value, in this case, `red`
     * finally, we have the semicolon, `;`
 
-This takes a lot of time to get used to, so don't overstress about it! The best way to get better with this is with practice.
+This takes a lot of time to get used to, so don't over-stress about it! The best way to get better with this is with practice.
 
 Let's add on to our example:
 
@@ -360,6 +377,18 @@ We can have multiple classes, and apply them to different elements:
 <p class="blue-text large-text">this text will be large and blue!</p>
 ```
 
+There's much more to do with classes, but we'll mark this as a good point to stop. Next lesson, we'll go over a bit more about HTML and CSS, and get started on our first project: making ourselves a personal website!
+
+> Checkpoint alert! If you fell behind no worries, check out the [code found here](checkpoints/05/)
+
 ## Conclusion
 
-...
+We learned quite a few things in this lesson:
+
+* what HTML and CSS are, and what they're used for
+* the syntax for an HTML tag
+* different types of HTML tags (`h1-6`, `p`, `a`, `img`, `header`, `footer`, etc.)
+* how to use properties of HTML elements (e.g. `src` for `img`)
+* how to use inline styling for CSS
+* several basic CSS declarations: `color`, `background-color`, `font-size`, `font-weight`, `text-align`
+* creating CSS classes in a stylesheet, and the `class` property
