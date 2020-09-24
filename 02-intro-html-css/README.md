@@ -103,7 +103,7 @@ Put simply, all the web browsers have decided upon a HTML **standard**. Think of
 
 > We'll support the `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags, but NOT the `<h7>`, `<h8>`, or `<matt>` tags.
 
-This means we have to learn the foundational tags that the standard outlines. Let's dive into that.
+This means we have to learn the foundational tags that the standard outlines. Let's dive into that. (by the way we will be working with html5, which is just a version of HTML that uses a certain standard)
 
 We will start with HTML headings. Let's try out all the heading sizes supported by html5. Try typing the code below into your `page.html` file. (Don't copy paste! It's easier to remember the syntax when you type)
 
@@ -123,6 +123,86 @@ You should get something that looks like:
 Do you notice anything? The font size gets smaller to indicate that certain text is less important than others. Your eyes are naturally guided towards the largest text first, then the next largest and so on. Neat huh?
 
 This isn't a coincidence: HTML is structured in such a way where information and tags are ranked one above the other according to importance. This is called the `HTML Hierarchy` (Fancy word alert! Remember this, it will come up again later)
+
+### Paragraphs and images
+
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/01/page.html) into your `page.html`
+
+What if you wanted to write lengthier text? Say you wanted to write a book or a paragraph that explains why Matt is so great and how he was cheated out of his own html tag. Or maybe we want to serenade Chase about how he's such a cool person and a fantastic teacher.
+
+Let's add the following code to our `page.html` file
+
+```html
+<p>This is a paragraph, wow!</p>
+<p>Let's write about Matt and Chase now.</p>
+<p>What if you wanted to write lengthier text? Say you wanted to write a book or a paragraph that explains why Matt is so great and how he was cheated out of his own html tag. Or maybe we want to serenade Chase about how he's such a cool person and a fantastic teacher.</p>
+```
+
+This should result in something like:
+![Paragraphs in html](images/paragraphs.png)
+
+Note how the paragraphs naturally have line breaks between them, even though we don't have any in our code. This is a great example of how HTML is _telling_ the browser how to display your information.
+
+---
+
+Let's add more content. What if we want an image? Here's an image of the [matt](https://avatars0.githubusercontent.com/u/14893287?s=400&u=7a0d69cf5f16e415439c20017f85f9c8dc4582d1&v=4)!
+
+Let's add the following code into our `page.html` file. It's okay to copy and paste here, since the link is so long
+```html
+<img src="https://avatars0.githubusercontent.com/u/14893287?s=400&u=7a0d69cf5f16e415439c20017f85f9c8dc4582d1&v=4" />
+```
+You should now have a picture of matt on your webpage.
+
+### Links (or more formally known as Anchors)
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/02/page.html) into your `page.
+
+What if we wanted to add a hyperlink to our webpage? Maybe a link to the [ACM TeachLA website](https://teachla.uclaacm.com/)?
+
+We can do this with the `<a>` tag. Let's add it to our `page.html`
+```html
+<a href="https://teachla.uclaacm.com/">A link to the ACM TeachLA website!</a>
+```
+
+You should now have that familiar blue underlined text we all know as links!
+
+![links](images/link.png)
+
+But wait, why do the HTML tags for `<img>` and `<a>` have things inside of the tags? What are `href` and `src`?
+
+These are known as HTML **attriutes**, which you can think of little nametags you add to HTML tags. For example the `href` and `src` attributes tell their html tags where to look to find the webpage or image respectively. In english `<a href="https://teachla.uclaacm.com/">` would roughly translate to "put a link that points to the teachLA website". 
+
+We'll cover more about attributes later today.
+
+### Explicit HTML structure
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/03/page.html) into your `page.
+
+Remember when we talked about the HTML hierarchy? Let's bring that back again.
+
+There are some special tags in HTML, ones that delinate specific sections of a webpage. You don't need to copy any of this down in `page.html` but it's usefuly just to follow along with the images below.
+
+```html
+<html>
+  <body>
+    <header>
+      This is some text in the header
+    </header>
+    This is some text in the main body
+    <footer>
+      This is some text in the footer
+    </footer>
+  </body>
+</html>
+```
+In the html hierarchy, the `<html>` tag tells the browser: "Hey the webpage begins here! Everything surrounded by the `<html>` tags is part of the webpage"
+
+The `<body>` tag tells the browser where to loook for the main content. Everything that the user will end up seeing should be in the `body` tag.
+
+`<header>` and `<footer>` indicate exactly what the words imply: a header at the top of a webpage and a footer at the bottom.
+
+Let's see what this hierarchy looks like visually:
+
+![an html wireframe](images/wireframe.png)
+Here you can see the header surrounded by a red border, the main text surrounded by a green border and the footer surrounded by a blue border. The body has a dashed black border, and the html has a solid yellow border
 
 ## Styling
 
@@ -188,9 +268,27 @@ Let's see what else we can do!
 <footer style="text-align:center;color:green;">this footer is centered and green!</footer>
 ```
 
-## CSS, a Primer
+## Classes and CSS
 
-Okay, so we know there are a few ways to style elements on our page. But how exactly do we do it?
+Okay, so now we know how to style elements with inline styling. But what if we wanted to use the same style for multiple elements - we don't want to repeat ourselves many times!
+
+Turns out, computer programs are just as lazy are you, and hate repeating themselves. To solve this problem, they came up with a way to define reusable styles with CSS: using **CSS classes**.
+
+### Setting up a "Stylesheet"
+
+*Note: if you're using repl.it or codepen, you can skip this step!*
+
+Before we do any legwork, we need to do a tiny bit of setup. We already have a `page.html`; but, we also need to create a `page.css` file. This file will contain ALL of our CSS - it is appropriately called a stylesheet.
+
+Then, closer to the top of the `page.html`, we need to add in a `link` tag:
+
+```html
+<link rel="stylesheet" href="page.css">
+```
+
+And, that's it! From now on, where you see CSS, plop that into `page.css`; for HTML, put it in `page.html`.
+
+### CSS Basics
 
 Let's take a look at a very simple CSS declaration:
 
@@ -202,6 +300,7 @@ Let's take a look at a very simple CSS declaration:
 
 ```html
 <p class="red-text">this text will be red!</p>
+<p class="red-text">so will this!</p>
 ```
 
 This is a *CSS class declaration*; you might guess that it makes text red, and you'd be right!
@@ -210,7 +309,7 @@ There are a few things we should break down on how exactly this works. Don't str
 
 1. The `.red-text` is called the *selector*, and it says what the style applies to. In this case, it applies to anything that we name `red-text` - which we did with `class`
 2. Then, there are a few things in between our braces, `{` and `}` - these are the styles that will be applied!
-3. Each line of CSS within the braces is of the form `PROPERTY:VALUE;`:
+3. Each line of CSS within the braces is of the form `PROPERTY:VALUE;`; this is what we've seen before. As a reminder:
     * the property is the `color`
     * then, we have a `:` - this is mandatory
     * then, we have the value, in this case, `red`
@@ -229,9 +328,10 @@ Let's add on to our example:
 
 ```html
 <p class="large-red-text">this text will be large and red!</p>
+<p class="large-red-text">and this text too! wow!</p>
 ```
 
-We've introduced a new CSS property, `font-size`: its value can be in `px`, a unit tied to the pixels on your screen.
+Wow, that's convenient! We can now apply many different complex styles to different HTML elements!
 
 We can have multiple classes, and apply them to different elements:
 
@@ -251,3 +351,7 @@ We can have multiple classes, and apply them to different elements:
 <p class="blue-text">this text will be blue!</p>
 <p class="blue-text large-text">this text will be large and blue!</p>
 ```
+
+## Conclusion
+
+...
