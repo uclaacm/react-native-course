@@ -126,7 +126,7 @@ This isn't a coincidence: HTML is structured in such a way where information and
 
 ## Styling
 
-Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the style -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in! 
+Now that we’ve defined the content and structure of our webpage with HTML, it’s time to specify how that content looks, also known as the style -- for example, we might want to change the size, color, and position of elements on our page. This is where CSS comes in!
 
 Before we dive right into it, we need to consider how we can use CSS with HTML. For starters, do we need to write our CSS in a separate file from our HTML code? The answer depends, as it turns out there’s actually several ways to use CSS with HTML. Let’s take a look at a couple of the most useful ways:
 
@@ -137,13 +137,13 @@ Before we dive right into it, we need to consider how we can use CSS with HTML. 
 
 Don’t worry about the names or specifics of these methods -- we just need a high level overview so that we can get right to using CSS. And if you’re wondering which method is “better,” as we’ll see, each method has its pros and cons! We’re going to start with the inline method, since this is the easiest way to demonstrate and get started with CSS.
 
-As previously mentioned, the first step to adding inline CSS is to add a `style` attribute to the HTML element we want to customize. The value of the attribute is the particular CSS style(s) we want to apply. Here’s how this looks with HTML, minus the actual CSS: 
+As previously mentioned, the first step to adding inline CSS is to add a `style` attribute to the HTML element we want to customize. The value of the attribute is the particular CSS style(s) we want to apply. Here’s how this looks with HTML, minus the actual CSS:
 
 ```html
 <tagname style="some CSS!">text</tagname>
 ```
 
-CSS allows us to specify styles using certain properties and values. The property is the type of style we want to change (e.g. color, size), and the value is the exact style we want (e.g. color can be red). The CSS syntax is fairly straightforward: 
+CSS allows us to specify styles using certain properties and values. The property is the type of style we want to change (e.g. color, size), and the value is the exact style we want (e.g. color can be red). The CSS syntax is fairly straightforward:
 
 ```css
 property:value;
@@ -179,9 +179,27 @@ Now that we’ve got all that out of the way, we can start actually writing some
 <h1 style=”color:blue;”>a blue heading!</h1>
 ```
 
-## CSS, a Primer
+## Classes and CSS
 
-Okay, so we know there are a few ways to style elements on our page. But how exactly do we do it?
+Okay, so now we know how to style elements with inline styling. But what if we wanted to use the same style for multiple elements - we don't want to repeat ourselves many times!
+
+Turns out, computer programs are just as lazy are you, and hate repeating themselves. To solve this problem, they came up with a way to define reusable styles with CSS: using **CSS classes**.
+
+### Setting up a "Stylesheet"
+
+*Note: if you're using repl.it or codepen, you can skip this step!*
+
+Before we do any legwork, we need to do a tiny bit of setup. We already have a `page.html`; but, we also need to create a `page.css` file. This file will contain ALL of our CSS - it is appropriately called a stylesheet.
+
+Then, closer to the top of the `page.html`, we need to add in a `link` tag:
+
+```html
+<link rel="stylesheet" href="page.css">
+```
+
+And, that's it! From now on, where you see CSS, plop that into `page.css`; for HTML, put it in `page.html`.
+
+### CSS Basics
 
 Let's take a look at a very simple CSS declaration:
 
@@ -193,6 +211,7 @@ Let's take a look at a very simple CSS declaration:
 
 ```html
 <p class="red-text">this text will be red!</p>
+<p class="red-text">so will this!</p>
 ```
 
 This is a *CSS class declaration*; you might guess that it makes text red, and you'd be right!
@@ -201,7 +220,7 @@ There are a few things we should break down on how exactly this works. Don't str
 
 1. The `.red-text` is called the *selector*, and it says what the style applies to. In this case, it applies to anything that we name `red-text` - which we did with `class`
 2. Then, there are a few things in between our braces, `{` and `}` - these are the styles that will be applied!
-3. Each line of CSS within the braces is of the form `PROPERTY:VALUE;`:
+3. Each line of CSS within the braces is of the form `PROPERTY:VALUE;`; this is what we've seen before. As a reminder:
     * the property is the `color`
     * then, we have a `:` - this is mandatory
     * then, we have the value, in this case, `red`
@@ -220,9 +239,10 @@ Let's add on to our example:
 
 ```html
 <p class="large-red-text">this text will be large and red!</p>
+<p class="large-red-text">and this text too! wow!</p>
 ```
 
-We've introduced a new CSS property, `font-size`: its value can be in `px`, a unit tied to the pixels on your screen.
+Wow, that's convenient! We can now apply many different complex styles to different HTML elements!
 
 We can have multiple classes, and apply them to different elements:
 
@@ -242,3 +262,7 @@ We can have multiple classes, and apply them to different elements:
 <p class="blue-text">this text will be blue!</p>
 <p class="blue-text large-text">this text will be large and blue!</p>
 ```
+
+## Conclusion
+
+...
