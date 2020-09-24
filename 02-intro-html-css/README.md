@@ -103,7 +103,7 @@ Put simply, all the web browsers have decided upon a HTML **standard**. Think of
 
 > We'll support the `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags, but NOT the `<h7>`, `<h8>`, or `<matt>` tags.
 
-This means we have to learn the foundational tags that the standard outlines. Let's dive into that.
+This means we have to learn the foundational tags that the standard outlines. Let's dive into that. (by the way we will be working with html5, which is just a version of HTML that uses a certain standard)
 
 We will start with HTML headings. Let's try out all the heading sizes supported by html5. Try typing the code below into your `page.html` file. (Don't copy paste! It's easier to remember the syntax when you type)
 
@@ -123,6 +123,86 @@ You should get something that looks like:
 Do you notice anything? The font size gets smaller to indicate that certain text is less important than others. Your eyes are naturally guided towards the largest text first, then the next largest and so on. Neat huh?
 
 This isn't a coincidence: HTML is structured in such a way where information and tags are ranked one above the other according to importance. This is called the `HTML Hierarchy` (Fancy word alert! Remember this, it will come up again later)
+
+### Paragraphs and images
+
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/01/page.html) into your `page.html`
+
+What if you wanted to write lengthier text? Say you wanted to write a book or a paragraph that explains why Matt is so great and how he was cheated out of his own html tag. Or maybe we want to serenade Chase about how he's such a cool person and a fantastic teacher.
+
+Let's add the following code to our `page.html` file
+
+```html
+<p>This is a paragraph, wow!</p>
+<p>Let's write about Matt and Chase now.</p>
+<p>What if you wanted to write lengthier text? Say you wanted to write a book or a paragraph that explains why Matt is so great and how he was cheated out of his own html tag. Or maybe we want to serenade Chase about how he's such a cool person and a fantastic teacher.</p>
+```
+
+This should result in something like:
+![Paragraphs in html](images/paragraphs.png)
+
+Note how the paragraphs naturally have line breaks between them, even though we don't have any in our code. This is a great example of how HTML is _telling_ the browser how to display your information.
+
+---
+
+Let's add more content. What if we want an image? Here's an image of the [matt](https://avatars0.githubusercontent.com/u/14893287?s=400&u=7a0d69cf5f16e415439c20017f85f9c8dc4582d1&v=4)!
+
+Let's add the following code into our `page.html` file. It's okay to copy and paste here, since the link is so long
+```html
+<img src="https://avatars0.githubusercontent.com/u/14893287?s=400&u=7a0d69cf5f16e415439c20017f85f9c8dc4582d1&v=4" />
+```
+You should now have a picture of matt on your webpage.
+
+### Links (or more formally known as Anchors)
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/02/page.html) into your `page.
+
+What if we wanted to add a hyperlink to our webpage? Maybe a link to the [ACM TeachLA website](https://teachla.uclaacm.com/)?
+
+We can do this with the `<a>` tag. Let's add it to our `page.html`
+```html
+<a href="https://teachla.uclaacm.com/">A link to the ACM TeachLA website!</a>
+```
+
+You should now have that familiar blue underlined text we all know as links!
+
+![links](images/link.png)
+
+But wait, why do the HTML tags for `<img>` and `<a>` have things inside of the tags? What are `href` and `src`?
+
+These are known as HTML **attriutes**, which you can think of little nametags you add to HTML tags. For example the `href` and `src` attributes tell their html tags where to look to find the webpage or image respectively. In english `<a href="https://teachla.uclaacm.com/">` would roughly translate to "put a link that points to the teachLA website". 
+
+We'll cover more about attributes later today.
+
+### Explicit HTML structure
+> Checkpoint alert! If you fell behind no worries, just copy the [code found here](checkpoints/03/page.html) into your `page.
+
+Remember when we talked about the HTML hierarchy? Let's bring that back again.
+
+There are some special tags in HTML, ones that delinate specific sections of a webpage. You don't need to copy any of this down in `page.html` but it's usefuly just to follow along with the images below.
+
+```html
+<html>
+  <body>
+    <header>
+      This is some text in the header
+    </header>
+    This is some text in the main body
+    <footer>
+      This is some text in the footer
+    </footer>
+  </body>
+</html>
+```
+In the html hierarchy, the `<html>` tag tells the browser: "Hey the webpage begins here! Everything surrounded by the `<html>` tags is part of the webpage"
+
+The `<body>` tag tells the browser where to loook for the main content. Everything that the user will end up seeing should be in the `body` tag.
+
+`<header>` and `<footer>` indicate exactly what the words imply: a header at the top of a webpage and a footer at the bottom.
+
+Let's see what this hierarchy looks like visually:
+
+![an html wireframe](images/wireframe.png)
+Here you can see the header surrounded by a red border, the main text surrounded by a green border and the footer surrounded by a blue border. The body has a dashed black border, and the html has a solid yellow border
 
 ## Styling
 
