@@ -82,6 +82,8 @@ Hm, we've also learned a few things about tags in HTML. We'll use this approach 
 * inside the `___`, you can put in a name of the tag; we know `h1` is used for title headings
 * if we put text *between* the tags, our browser interprets it differently!
 
+We'll refer to these HTML components, consisting of the start tag, content, and closing tag, as HTML *elements*.
+
 But hm, there are still some other things we don't know. Do all tags create different styles? What happens if you put text outside of a tag? Do spaces matter?
 
 Well, the nice thing about our class is that we can just try this out. So, let's do it:
@@ -169,7 +171,7 @@ You should now have that familiar blue underlined text we all know as links!
 
 But wait, why do the HTML tags for `<img>` and `<a>` have things inside of the tags? What are `href` and `src`?
 
-These are known as HTML **attriutes**, which you can think of little nametags you add to HTML tags. For example the `href` and `src` attributes tell their html tags where to look to find the webpage or image respectively. In english `<a href="https://teachla.uclaacm.com/">` would roughly translate to "put a link that points to the teachLA website". 
+These are known as HTML **attributes**, which you can think of little nametags you add to HTML tags. For example the `href` and `src` attributes tell their html tags where to look to find the webpage or image respectively. In english `<a href="https://teachla.uclaacm.com/">` would roughly translate to "put a link that points to the teachLA website". 
 
 We'll cover more about attributes later today.
 
@@ -268,11 +270,17 @@ Let's see what else we can do!
 <footer style="text-align:center;color:green;">this footer is centered and green!</footer>
 ```
 
+Before we move on, there's one thing we need to note -- you may have noticed that certain HTML elements appear to already have their own styles. For example, text included in an `h1` tag is bigger and bolder than text in a `p` tag, even though we haven't specified those styles with CSS. This is because some elements have default CSS styles, which are often convenient -- typically, we'd like the heading to be big and bold. However, the styling differences between different tags are still the result of CSS, not HTML. Remember, styling is always done with CSS, not HTML -- if you want big and bold text that isn't intended to serve as a heading, you should use CSS and a more appropriate tag than `h1`. 
+
 ## Classes and CSS
 
 Okay, so now we know how to style elements with inline styling. But what if we wanted to use the same style for multiple elements - we don't want to repeat ourselves many times!
 
-Turns out, computer programs are just as lazy are you, and hate repeating themselves. To solve this problem, they came up with a way to define reusable styles with CSS: using **CSS classes**.
+Turns out, computer programs are just as lazy are you, and hate repeating themselves. To solve this problem, they came up with a way to define reusable styles with CSS: using **CSS classes**. We can think of a class as a group of elements that we want to apply the same styles to. To include an element in a class, we use another HTML attribute, the `class` attribute, and specify the name of the class as the value. For example, to put a `p` element in a class called `group`, we would write
+
+```html
+<p class="group"></p>
+```
 
 ### Setting up a "Stylesheet"
 
