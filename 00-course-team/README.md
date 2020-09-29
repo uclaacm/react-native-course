@@ -44,6 +44,12 @@ If you have questions about anything at all or just want to say hi, please feel 
 
 ## Instructor: Param
 
+Hey everyone, I'm Param! I'm a 3rd-year Computer Science major at UCLA from India!
+
+I'm super excited to teach this class, this is the first time ever I am teaching a high school class! I actually never wrote a line of code before coming to college so I'm particularly interested in seeing you all get early exposure to CS.
+
+Hope to e-meet you all. I've done web development at a startup and clubs on campus so if you have any questions at all, don't hesitate to reach out to me at [paramshah09@gmail.com](mailto:paramshah09@gmail.com)!
+
 ## About Teach LA
 
 ACM Teach LA is a 501(c)(3) nonprofit at UCLA that looks to provide equitable access to K-12 computer science education in Los Angeles. We teach weekly classes on topics ranging from intro Scratch and Python to AI & Machine Learning; we run one-off events on a range of topics like diversity in tech, CS in college, cybersecurity, bias in machine learning, and more; and, we write software to make education easier and more engaging. You can find out more about ACM Teach LA [at our website](https://teachla.uclaacm.com).
