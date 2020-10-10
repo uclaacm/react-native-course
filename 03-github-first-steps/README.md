@@ -29,7 +29,9 @@ Evan and Matt can be working on different parts of a `.js` file at the same time
 
 Evan can work on a certain feature in his timeline (such as cleaning up a bug he made in a previous commit), while Matt works on a different feature (like creating a cool new online code editor). When they're both done, they can combine those two parallel timelines together back into our current timeline (more jargon here that you can ignore if you just want the bigger picture: in Git we usually call parallel timelines *branches*, and the combination of parallel timelines *merges*).
 
-In conclusion: Github let's us track a rich history of the development of code, and it lets us become time travelers!
+Can you see what makes this so powerful? When our Github grows large and includes hundreds of files, Evan and Matt's separate timelines allow them to work independently where one person's changes won't affect the other's work. (This is where Github differs from Google Docs: ever have someone edit the same word you were trying to fix at the same time? This won't happen in separate Git branches).
+
+Let's review what Github is and why programmers love it so much. Github is a great place to store files on the internet, creating a backup for our code. More importantly, Github let's us track a rich history of the development of code and this history is valuable for other programmers. Lastly Github lets us become time travelers and work with other people!
 
 ## Creating a GitHub Account
 To create a Github account you'll need an email address you can log in to, a secure password you'll remember and a creative username!
