@@ -39,6 +39,8 @@ Once you've created an account select the options that best describe you in the 
 ![Select student because you are a student](images/welcome-1.png)
 ![Select Create a Website with Github Pages](images/welcome-2.png)
 
+Github will prompt you to confirm your email, which you should do now.
+
 ## Creating a GitHub Repository
 We now need to create a *Repository*. Think of a repository as analogous to a Google Drive folder, but with the added benefit of version control like we said before. Put simply, Github will track the history of your files, which includes information about who updated which files at what time, and what content they added or deleted.
 
