@@ -19,7 +19,7 @@ But if that's all Github does, why don't we just opt for another platform to sto
 
 Good question! Github is very similar to Google Drive, but it has the added benefit of tracking history. Think of uploading a a photo to Google Drive, you'll know who modified the image and at what time. With code, however, we need our history to be more *granular*. It's not enough to know when a file changed, programmers want to know when specific lines change and who changed those lines (think of how easy it was to break your html by just omitting a closing bracket). 
 
-This detail also allows programmers to create a rich history about the creation of their code: if I update lines 3 through 10 on a carrot-cake.js on Matt's birthday at 10:00 a.m. Pacific Time, a programmer 20 years down the line can see that specific update I wrote. We call this creation of history through small updates (or *commits* in Github jargon) version control.
+This detail also allows programmers to create a rich history about the creation of their code: if Evan updates lines 3 through 10 on a carrot-cake.js on Matt's birthday at 10:00 a.m. Pacific Time, a programmer 20 years down the line can see that specific update Evan wrote. We call this creation of history through small updates (or *commits* in Github jargon) version control.
 
 **Github is a place to collaborate**
 
