@@ -65,6 +65,35 @@ You'll be able to see your own webpage live on the internet! Any computer can na
 
 ## Committing and Uploading Files
 
+Now that we have created a repository, let's upload some files to it. We first need to download our code files from repl.it. Simply go to [repl.it](repl.it) and navigate to the project that you have been working on. Save the zip folder in any directory you want.
+![Download files from repl.it](images/download-repl-files.png)
+
+**Note:** We just downloaded a zip folder from repl.it which needs to be unzipped before uploading to Github. In ChromeOS, this process usually just involves copying the files from the downloaded folder to any other folder you want.
+
+After your files have been dowloaded and unzipped, we'll need to upload them to GitHub. Navigate to your github repo and click on the add files button.
+![Add files to Github](images/upload-files-1.png)
+
+Either drag and drop your files in the box provided or click the button to navigate your file system and find and upload your files.
+![Click on add files button](images/upload-files-2.png)
+
+Now, make sure you select all the files from your zip folder. Your interface may look different than mine but you should have all 3 files selected. Click open to upload them to github.
+![Select your project files](images/upload-files-3.png)
+
+After your files have been successfully uploaded, we need to commit (or save them).
+
+**Note:** You may not see some files since they might be empty so don't worry, that is not an error. It is just because Github does not allow you to upload empty files. However, make sure you see AT LEAST the index.html file as in the picture below.
+![Commit files](images/commit.png)
+
 ## Enabling GitHub Pages!
 
+Since we already have named our repository as *YOUR_USER_NAME.github.io*, GitHub Pages is automatically turned on. Now, to make sure everything is been done properly, navigate to `https://YOUR_USER_NAME.github.io`. If you don't see any updates, wait for a few minutes and try again.
+
 ## Conclusion
+
+We learned quite a lot of useful stuff in this lesson:
+
+* What GitHub is
+* Why is GitHub so useful and how it can facilitate collaboration
+* How to use GitHub to host your website on the internet for anyone to see
+
+This might all seem new and daunting at first but I am sure you'll get pretty good at it once you start using it frequently. Next week, we are going to jump into learning JavaScript and how you can use it to make your website much more interactive.
