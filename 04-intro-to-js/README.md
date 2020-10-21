@@ -29,7 +29,7 @@ So let's go back to our \<script> tag, and write some javascript to define a **f
 ```var clicks = 0;```
 
 In english, this means 
-```define a variable called clicks, and start it at zero```  
+```define a variable called click, and start it at zero```  
 
 Next, we have
 
