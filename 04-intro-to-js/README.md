@@ -1,6 +1,59 @@
 ## Making our Webpages Interactive! 
 
-So as we just observed, not having javascript makes webpages **essentially unusable** (in most cases!)
+In this lesson, we are going to take a look at JavaScript, a scripting language used in just about every website on the internet! It’s what enables a programmer to add extra functionality to their web page that can’t be easily done using HTML or CSS, which we talked about in previous weeks. JavaScript’s main purpose is to allow dynamic interaction between the user of a website and the website itself. So, with HTML and CSS, we can have static (not changing) web pages, but JavaScript allows us to have features that will change based on some input that the user gives, like a button click or typing on the keyboard. 
+
+So, you’re probably wondering exactly what JavaScript can do, and that’s a great question! Some examples are that JavaScript could allow you to add buttons that make something happen on a web page, like show a picture of a unicorn or show a new sentence on the page. It could allow you to embed a certain video from Youtube or content from another website onto your own web page. We will hear of even more examples today of what JavaScript can do for our web applications, and you will even get a chance to use it and see how it works. 
+
+Let's take a quick look at what happens when we disable JavaScript and view a website that uses it! If we head over to YouTube and disable JavaScript on our browser, here's what the site looks like:
+![youtube.com with JavaScript disabled](images/youtube.png)
+
+The site is barely recognizable! Clearly, JavaScript enables a lot of functionality in modern web sites.
+
+The next question is: how different is JavaScript from HTML, CSS, or other programming languages? Basically, JavaScript isn’t too much different from other programming languages you’ve heard of or maybe used, but is just used for a different purpose a lot of the time. Just like the most popular programming languages (like Python or Java or C), JavaScript has variables and functions. This is what we will talk about next. 
+
+To make a website interactive, we need a way to deal with information, or data. For example, let’s say we want to make a feature on our web page where the user types in a message, and the web page displays an encoded version of the message. We’ll need a way to store the message that the user typed so that we can encode it. Put simply, we need a way to store information so that we can do stuff with it. In computer programming, we store information using a **variable**. You can think of a variable as a container that can store any sort of information. For example, if we wanted to store someone’s name, we could have a `name` variable that contains the value “Bob”. If we wanted to store someone’s age, we could have an `age` variable that contains the value 25. Here’s how we would create these variables in JavaScript:
+
+```
+var name = “Bob”
+var age = 25
+```
+
+The `var` keyword indicates that we’re creating a variable, and the equals sign is used to give the variable a value to store. In English, we could read the second line as `create a variable called age and give it the value 25`.
+
+Now, any time we use the variable `age` in our program, we’ll really be using the value that it contains, 25. For example, on Bob’s birthday, he’ll be one year older, so we’ll need to increase his age by 1. We can do so like this:
+
+```
+age = age + 1
+```
+
+In English, this means `Add 1 to the value stored in age, and store the result in age`. So, `age` will hold the value 26. Since `age` contains the value 25, this is essentially the same as
+
+```
+age = 25 + 1
+```
+
+Another thing that will come in handy down the line is being able to tell the computer exactly what to do once, and asking it to perform that task again without telling it every step again. For example, let’s say I want to program a robot to make me some brownies. I will have to give it the recipe, or the series of instructions it needs to perform to make the brownies:
+
+```
+Add 2 eggs
+Add 3 cups of chocolate
+Mix ingredients in a bowl
+…
+```
+
+The next time I want brownies, I don’t want to dictate the recipe to the robot again. I’d rather tell it something along the lines of “yo make me some brownies,” and have the robot perform those same steps again. 
+
+In programming, we can do this using something called a **function**. A function is just a block of code that performs some action. For this example, the function could be called `brownies`, and the code would be the recipe. 
+
+Here’s what a function looks like in JavaScript:
+
+```
+function myFunction() {
+  some code!
+}
+```
+
+where “some code!” is replaced with JavaScript code. If we wanted the computer to run “some code” multiple times throughout our program, instead of writing the code again and again, we could instead write `myFunction()`. The computer would then know to run the code contained in `myFunction`.
   
 At this point, you're probably asking "Well, how do I actually harness the power of Javascript to make interactive websites and apps?", and for that, you've come to the right place!  
 
