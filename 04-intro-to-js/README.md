@@ -28,10 +28,11 @@ But what actually goes in those ""? We need a **repeatable task, or way of doing
 
 So let's go back to our \<script> tag, and write some JavaScript to define a **function** that tracks how many times we've clicked our element. 
 
-``` var clicks = 0;```
+
+```var click = 0;```
 
 In english, this means 
-```define a variable called clicks, and start it at zero```  
+```define a variable called click, and start it at zero```  
 
 Next, we have
 
