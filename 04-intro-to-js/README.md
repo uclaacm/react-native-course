@@ -15,8 +15,8 @@ The next question is: how different is JavaScript from HTML, CSS, or other progr
 To make a website interactive, we need a way to deal with information, or data. For example, let’s say we want to make a feature on our web page where the user types in a message, and the web page displays an encoded version of the message. We’ll need a way to store the message that the user typed so that we can encode it. Put simply, we need a way to store information so that we can do stuff with it. In computer programming, we store information using a **variable**. You can think of a variable as a container that can store any sort of information. For example, if we wanted to store someone’s name, we could have a `name` variable that contains the value “Bob”. If we wanted to store someone’s age, we could have an `age` variable that contains the value 25. Here’s how we would create these variables in JavaScript:
 
 ```
-var name = “Bob”
-var age = 25
+let name = “Bob”
+let age = 25
 ```
 
 The `var` keyword indicates that we’re creating a variable, and the equals sign is used to give the variable a value to store. In English, we could read the second line as `create a variable called age and give it the value 25`.
@@ -66,7 +66,7 @@ There are two main ways to incorporate JavaScript into your HTML file, and they 
 ``` <script src="script.js"> </>```  
 This way is great when you have a lot of code, because it lets you keep your HTML file neat and easy to read. 
 2. You can write your JavaScript **inside** of your script tag
-``` <script> var i = 0... </>```  
+``` <script> let i = 0... </>```  
 This way is good if you have a small amount of code, and we'll be using it for its simplicity. 
 
 Now that we know how to incorporate JavaScript in our HTML, we need a way to allow *input* from the user of our website.  
@@ -84,7 +84,7 @@ But what actually goes in those ""? We need a **repeatable task, or way of doing
 So let's go back to our \<script> tag, and write some JavaScript to define a **function** that tracks how many times we've clicked our element. 
 
 
-```var click = 0;```
+```let click = 0;```
 
 In english, this means 
 ```define a variable called click, and start it at zero```  
@@ -121,6 +121,4 @@ The *innerHTML* specifies what goes inside of the element's tags! In this case, 
 
 All together, this line is saying:  
 `Get the element whose ID is 'num', and make the stuff inside of its tags equal to the number of times we've clicked our button element`
-
-All we need to do now is make a new element, with the ID 'num', to display how many times we've clicked our button element. 
 
