@@ -24,6 +24,8 @@ Here's a roadmap for all of the content that we cover, week-by-week:
 
 1. [Week 1: Welcome & Course Overview + Quick Snack Demo](https://github.com/uclaacm/react-native-course-20-21/tree/master/01-welcome-and-overview)
 2. [Week 2: Intro to HTML & CSS](https://github.com/uclaacm/react-native-course-20-21/tree/master/02-intro-html-css)
+3. [Week 3: First Steps with GitHub](https://github.com/uclaacm/react-native-course-20-21/tree/master/03-github-first-steps)
+4. [Week 4: Intro to JS](https://github.com/uclaacm/react-native-course-20-21/tree/master/04-intro-to-js)
 
 (more coming soon!)
 
