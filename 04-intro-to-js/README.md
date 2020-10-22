@@ -1,5 +1,6 @@
 ## Making our Webpages Interactive! 
 
+
 In this lesson, we are going to take a look at JavaScript, a scripting language used in just about every website on the internet! It’s what enables a programmer to add extra functionality to their web page that can’t be easily done using HTML or CSS, which we talked about in previous weeks. JavaScript’s main purpose is to allow dynamic interaction between the user of a website and the website itself. So, with HTML and CSS, we can have static (not changing) web pages, but JavaScript allows us to have features that will change based on some input that the user gives, like a button click or typing on the keyboard. 
 
 So, you’re probably wondering exactly what JavaScript can do, and that’s a great question! Some examples are that JavaScript could allow you to add buttons that make something happen on a web page, like show a picture of a unicorn or show a new sentence on the page. It could allow you to embed a certain video from Youtube or content from another website onto your own web page. We will hear of even more examples today of what JavaScript can do for our web applications, and you will even get a chance to use it and see how it works. 
@@ -54,14 +55,15 @@ function myFunction() {
 ```
 
 where “some code!” is replaced with JavaScript code. If we wanted the computer to run “some code” multiple times throughout our program, instead of writing the code again and again, we could instead write `myFunction()`. The computer would then know to run the code contained in `myFunction`.
-  
-At this point, you're probably asking "Well, how do I actually harness the power of Javascript to make interactive websites and apps?", and for that, you've come to the right place!  
 
-There are two main ways to incorporate javascript into your HTML file, and they both involve the \<script> tag.  
+  
+At this point, you're probably asking "Well, how do I actually harness the power of JavaScript to make interactive websites and apps?", and for that, you've come to the right place!  
+
+There are two main ways to incorporate JavaScript into your HTML file, and they both involve the \<script> tag.  
 (The \<script> tag is simply a way to let the browser know that whatever is inside should be **interpreted as JavaScript code**) 
 
 1. You can link an external .js file by specifying the *src* (source) *attribute*  
-```<script src="script.js"> </>```  
+``` <script src="script.js"> </>```  
 This way is great when you have a lot of code, because it lets you keep your HTML file neat and easy to read. 
 2. You can write your JavaScript **inside** of your script tag
 ``` <script> var i = 0... </>```  
@@ -75,9 +77,12 @@ One really easy way to get input from our user is with the *onclick* attribute. 
 
 Let's define a paragraph tag as:  
 ```<p onclick="">Click me!</p>```  
+And a element to display how many times we've clicked:
+```<p id="num>0</p>```
 But what actually goes in those ""? We need a **repeatable task, or way of doing something**, or in other words, a **function!**  
 
-So let's go back to our \<script> tag, and write some javascript to define a **function** that tracks how many times we've clicked our element. 
+So let's go back to our \<script> tag, and write some JavaScript to define a **function** that tracks how many times we've clicked our element. 
+
 
 ```var click = 0;```
 
@@ -94,7 +99,7 @@ Which means
 
 Inside of the curly braces:  
  
-``` function buttonClick(){ click = click + 1; }```
+```function buttonClick(){ click = click + 1; }```
 
 Which means  
 
@@ -105,18 +110,17 @@ We have one last line, and this is the one that actually changes our HTML:
 ``` function buttonClick(){ click = click + 1;    document.getElementById('num').innerHTML = click;}```
 
 Ok, that's a lot.  
-The first part of that line ```document.getElementByID('num')``` means that we're asking to find some element in our HTML that has the ID 'num'. But what is an ID?  
+The first part of that line `document.getElementByID('num')` means that we're asking to find some element in our HTML that has the ID 'num'. But what is an ID?  
 
 An ID is another HTML attribute that let's us identify unique elements. Much like a student ID, where one student gets one ID, one element gets one ID.  
 This lets us give the page an ID and the page will always respond *"Oh, I know exactly which element you're talking about, here it is"*  
 
-The next part of the line ```.innerHTML = click;``` 
+The next part of the line `.innerHTML = click;` 
 The *innerHTML* specifies what goes inside of the element's tags! In this case, we're setting it equal to the number of times we've clicked our \<p> tag.  
 *Note that this is not an HTML attribute, it is javascript*  
 
 All together, this line is saying:  
-```Get the element whose ID is 'num', and make the stuff inside of its tags equal to the number of times we've clicked our button element```
+`Get the element whose ID is 'num', and make the stuff inside of its tags equal to the number of times we've clicked our button element`
 
 All we need to do now is make a new element, with the ID 'num', to display how many times we've clicked our button element. 
 
-```<p id="num>0</p>```
