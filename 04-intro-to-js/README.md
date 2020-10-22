@@ -55,17 +55,17 @@ We have one last line, and this is the one that actually changes our HTML:
 ``` function buttonClick(){ click = click + 1;    document.getElementById('num').innerHTML = click;}```
 
 Ok, that's a lot.  
-The first part of that line ```document.getElementByID('num')``` means that we're asking to find some element in our HTML that has the ID 'num'. But what is an ID?  
+The first part of that line `document.getElementByID('num')` means that we're asking to find some element in our HTML that has the ID 'num'. But what is an ID?  
 
 An ID is another HTML attribute that let's us identify unique elements. Much like a student ID, where one student gets one ID, one element gets one ID.  
 This lets us give the page an ID and the page will always respond *"Oh, I know exactly which element you're talking about, here it is"*  
 
-The next part of the line ```.innerHTML = click;``` 
+The next part of the line `.innerHTML = click;` 
 The *innerHTML* specifies what goes inside of the element's tags! In this case, we're setting it equal to the number of times we've clicked our \<p> tag.  
 *Note that this is not an HTML attribute, it is javascript*  
 
 All together, this line is saying:  
-```Get the element whose ID is 'num', and make the stuff inside of its tags equal to the number of times we've clicked our button element```
+`Get the element whose ID is 'num', and make the stuff inside of its tags equal to the number of times we've clicked our button element`
 
 All we need to do now is make a new element, with the ID 'num', to display how many times we've clicked our button element. 
 
