@@ -1,14 +1,14 @@
 ## Making our Webpages Interactive! 
 
-So as we just observed, not having javascript makes webpages **essentially unusable** (in most cases!)
+So as we just observed, not having JavaScript makes webpages **essentially unusable** (in most cases!)
   
-At this point, you're probably asking "Well, how do I actually harness the power of Javascript to make interactive websites and apps?", and for that, you've come to the right place!  
+At this point, you're probably asking "Well, how do I actually harness the power of JavaScript to make interactive websites and apps?", and for that, you've come to the right place!  
 
-There are two main ways to incorporate javascript into your HTML file, and they both involve the \<script> tag.  
+There are two main ways to incorporate JavaScript into your HTML file, and they both involve the \<script> tag.  
 (The \<script> tag is simply a way to let the browser know that whatever is inside should be **interpreted as JavaScript code**) 
 
 1. You can link an external .js file by specifying the *src* (source) *attribute*  
-```<script src="script.js"> </>```  
+``` <script src="script.js"> </>```  
 This way is great when you have a lot of code, because it lets you keep your HTML file neat and easy to read. 
 2. You can write your JavaScript **inside** of your script tag
 ``` <script> var i = 0... </>```  
@@ -22,11 +22,13 @@ One really easy way to get input from our user is with the *onclick* attribute. 
 
 Let's define a paragraph tag as:  
 ```<p onclick="">Click me!</p>```  
+And a element to display how many times we've clicked:
+```<p id="num>0</p>```
 But what actually goes in those ""? We need a **repeatable task, or way of doing something**, or in other words, a **function!**  
 
-So let's go back to our \<script> tag, and write some javascript to define a **function** that tracks how many times we've clicked our element. 
+So let's go back to our \<script> tag, and write some JavaScript to define a **function** that tracks how many times we've clicked our element. 
 
-```var clicks = 0;```
+``` var clicks = 0;```
 
 In english, this means 
 ```define a variable called clicks, and start it at zero```  
@@ -41,7 +43,7 @@ Which means
 
 Inside of the curly braces:  
  
-``` function buttonClick(){ click = click + 1; }```
+```function buttonClick(){ click = click + 1; }```
 
 Which means  
 
@@ -66,4 +68,3 @@ All together, this line is saying:
 
 All we need to do now is make a new element, with the ID 'num', to display how many times we've clicked our button element. 
 
-```<p id="num>0</p>```
