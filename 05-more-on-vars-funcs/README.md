@@ -54,21 +54,12 @@ What about adding strings and numbers? Strings and booleans? Well, turns out we 
 
 Alright, that's enough about strings for now! What about booleans? 
 
-
-Turns out you can do all of those things! When you use a boolean value in JavaScript, true = 1 and false = 0. If you do arithmetic with booleans, booleans just evaluate to numbers. Like in math, you can't divide by false since that would be dividing by zero, but you can add/subtract/multiply/divide to your heart's content otherwise.
-=======
-### Operations with Booleans
+### Operations on Booleans
 Booleans are special. Not only can they be added/subtracted/multiplied/divided like numbers, but they can also be operated on logically. Let's look at the arithmetic operations first.
-
 
 #### Arithmetic Operations
 So we can add strings, but can you add AND subtract booleans? What about multiply and divide?
 
-
-Although you can mix numbers and booleans in JavaScript, you can't mix numbers and strings.
-
-Let's put this all together with an example combining JavaScript with some HTML.
-=======
 Turns out you can do all of those things! When you use a boolean value in JavaScript, true = 1 and false = 0. If you do arithmetic with booleans, booleans just evaluate to numbers. Like in math, you can't divide by false since that would be dividing by zero, but you can add/subtract/multiply/divide to your heart's content otherwise.
 
 Some examples:
@@ -121,7 +112,6 @@ console.log(!bool2); //true
 
 Let's put this all together with an in-depth example combining variables and your best friend in JavaScript, functions!
 
-
 ## The Anatomy of a Function
 
 Last week, we discussed functions in JavaScript as a way to simplify our code. This allows us to code a specific set of tasks and then be able to do that set of tasks again without typing it all out again!
@@ -133,9 +123,9 @@ Let&#39;s take a look at the function we made last week:
 ```javascript
 function buttonClick() { // the function declaration
 
-click = click + 1; //body of the function
+  click = click + 1; //body of the function
 
-document.getElementByID('num').innerHTML = click
+  document.getElementByID('num').innerHTML = click
 
 } // closing brace
 ```
@@ -154,11 +144,11 @@ For example, if we want to create a function that adds two numbers and prints th
 ```javascript
 function addTwoNumbers(number1, number2) { // function declaration and specify function arguments
 
-result = number1 + number2; // adds the two numbers into a variable called result
+  result = number1 + number2; // adds the two numbers into a variable called result
 
-console.log(result); //prints the sum to the console log
+  console.log(result); //prints the sum to the console log
 
-return result; // returns the sum to "whoever" called the function
+  return result; // returns the sum to "whoever" called the function
 
 } // closing brace
 ```
@@ -187,11 +177,11 @@ So for example, we could easily just change the plus sign in our function body t
 ```javascript
 function multiplyTwoNumbers(number1, number2) { // function declaration and specify function arguments
 
-result = number1 * number2; // multiplies the two numbers into a variable called result
+  result = number1 * number2; // multiplies the two numbers into a variable called result
 
-console.log(result); //prints the product to the console log
+  console.log(result); //prints the product to the console log
 
-return result; // returns the product to "whoever" called the function
+  return result; // returns the product to "whoever" called the function
 
 } 
 ```
@@ -200,11 +190,11 @@ Or we could change it to divide! :
 ```javascript
 function divideTwoNumbers(number1, number2) { // function declaration and specify function arguments
 
-result = number1 / number2; // divides the two numbers into a variable called result
+  result = number1 / number2; // divides the two numbers into a variable called result
 
-console.log(result); //prints the quotient to the console log
+  console.log(result); //prints the quotient to the console log
 
-return result; // returns the quotient to "whoever" called the function
+  return result; // returns the quotient to "whoever" called the function
 
 } 
 ```
@@ -215,11 +205,11 @@ This is what the function will look like now :
 ```javascript
 function compareTwoNumbers(number1, number2) { // function declaration and specify function arguments
 
-result = number1 == number2; // sees if the numbers are equal
+  result = number1 == number2; // sees if the numbers are equal
 
-console.log(result); //prints 1 or 0 (true or false) to the console log
+  console.log(result); //prints 1 or 0 (true or false) to the console log
 
-return result; // returns 1 or 0 (true or false) to "whoever" called the function
+  return result; // returns 1 or 0 (true or false) to "whoever" called the function
 
 } 
 ```
