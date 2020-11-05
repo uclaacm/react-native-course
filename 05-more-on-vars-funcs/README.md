@@ -16,17 +16,14 @@ let age = 25;
 
 [want to expand here]
 
-The main primitive data types in JavaScript are
+The main data types that you'll use in JavaScript are
+* Number
+* Boolean
+* String
 
-Number
-
-Boolean
-
-String
-
+These foundational data types are called *primitive* data types.
 (there are also other data types including undefined, BigInt, and, Symbol, but we won&#39;t go over these today.
-
-you can read more about them here if you&#39;re interested: [Data Types in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures))
+You can read more about them here if you&#39;re interested: [Data Types in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures))
 
 JavaScript is a dynamically typed language, which means that every variable type is determined at runtime, when you actually go to use it.
 
@@ -44,14 +41,15 @@ let firstName = Joe;
 
 let lastName = Bruin;
 
-console.log(firstName + &quot; &quot; + lastName); // Joe Bruin
+console.log(firstName + " " + lastName); // Joe Bruin
 ```
 
-\*\* console.log() is a function that writes a message to the debugging console
+*Note: console.log() is just a function that writes a message to the debugging console*
+
+What does this look like when you run the code on repl.it?
 
 ![](RackMultipart20201104-4-g0ysye_html_a63e2d43d9297fbd.png)
-
-Now booleans. Can you add AND subtract booleans? What about multiply and divide?
+Okay, cool! That's enough about strings for now. What about booleans? Can you add AND subtract booleans? What about multiply and divide?
 
 ### Math with Booleans
 
