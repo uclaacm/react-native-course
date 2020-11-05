@@ -3,11 +3,11 @@ In our last lesson, we saw how JavaScript can bring a website to life- that is, 
 
 We also looked at how we can harness the power of JavaScript in our own websites by writing a function to change our site at the click of a button (remember buttonClick()?).
 
-Today, we&#39;re going to dive a little deeper into JavaScript so that we can get to writing more complex functions.
+Today, we're going to dive a little deeper into JavaScript so that we can get to writing more complex functions.
 
 To write fancy functions, we need to take a closer look at variables.
 
-Here&#39;s an example from the previous lesson:
+Here's an example from the previous lesson:
 
 ```javascript
 let name = "Bob";
@@ -22,12 +22,12 @@ The main data types that you'll use in JavaScript are
 * String
 
 These foundational data types are called *primitive* data types.
-(there are also other data types including undefined, BigInt, and, Symbol, but we won&#39;t go over these today.
-You can read more about them here if you&#39;re interested: [Data Types in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures))
+(there are also other data types including undefined, BigInt, and, Symbol, but we won't go over these today.
+You can read more about them here if you're interested: [Data Types in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures))
 
 JavaScript is a dynamically typed language, which means that every variable type is determined at runtime, when you actually go to use it.
 
-This means you don&#39;t have to worry about specifying the type of each variable you use. That&#39;s really convenient, but it&#39;s still important to know what kind of variable you have, since each data type has its own quirks.
+This means you don't have to worry about specifying the type of each variable you use. That's really convenient, but it's still important to know what kind of variable you have, since each data type has its own quirks.
 
 For example, as you might expect, you can add, subtract, multiply, and divide numbers. But what about strings, or a boolean?
 
@@ -54,12 +54,21 @@ What about adding strings and numbers? Strings and booleans? Well, turns out we 
 
 Alright, that's enough about strings for now! What about booleans? 
 
+
+Turns out you can do all of those things! When you use a boolean value in JavaScript, true = 1 and false = 0. If you do arithmetic with booleans, booleans just evaluate to numbers. Like in math, you can't divide by false since that would be dividing by zero, but you can add/subtract/multiply/divide to your heart's content otherwise.
+=======
 ### Operations with Booleans
 Booleans are special. Not only can they be added/subtracted/multiplied/divided like numbers, but they can also be operated on logically. Let's look at the arithmetic operations first.
+
 
 #### Arithmetic Operations
 So we can add strings, but can you add AND subtract booleans? What about multiply and divide?
 
+
+Although you can mix numbers and booleans in JavaScript, you can't mix numbers and strings.
+
+Let's put this all together with an example combining JavaScript with some HTML.
+=======
 Turns out you can do all of those things! When you use a boolean value in JavaScript, true = 1 and false = 0. If you do arithmetic with booleans, booleans just evaluate to numbers. Like in math, you can't divide by false since that would be dividing by zero, but you can add/subtract/multiply/divide to your heart's content otherwise.
 
 Some examples:
@@ -112,6 +121,7 @@ console.log(!bool2); //true
 
 Let's put this all together with an in-depth example combining variables and your best friend in JavaScript, functions!
 
+
 ## The Anatomy of a Function
 
 Last week, we discussed functions in JavaScript as a way to simplify our code. This allows us to code a specific set of tasks and then be able to do that set of tasks again without typing it all out again!
@@ -125,7 +135,7 @@ function buttonClick() { // the function declaration
 
 click = click + 1; //body of the function
 
-document.getElementByID(&#39;num&#39;).innerHTML = click
+document.getElementByID('num').innerHTML = click
 
 } // closing brace
 ```
@@ -136,7 +146,7 @@ The first line is called the function declaration, where we tell our page that w
 
 The two parentheses after buttonClick () are where we store what are called function parameters or function arguments!
 
-Since there is nothing between the parentheses in this line, it means that we are requiring no parameters for our function. Put more simply, the user doesn&#39;t need to put in any data for our function to work, it&#39;ll just do the same work each time.
+Since there is nothing between the parentheses in this line, it means that we are requiring no parameters for our function. Put more simply, the user doesn't need to put in any data for our function to work, it'll just do the same work each time.
 
 However, many times we will need the user to give us input data. We are only able to use this data if it passed to our function through the use of parameters. Parameters are basically just variables that we give our function that it can work with to influence the action of the function.
 
@@ -156,7 +166,7 @@ So, let me take you guys through what this all means. The first line is the func
 
 We add together the variables number1 and number2, then print it to the console log in the body of our function, then return the sum, and then close the function with the ending curly brace.
 
-So, basically what we&#39;ve done is we&#39;ve allowed the user to pass us information through the use of function arguments or parameters, specifically two variables called number1 and number2. You can think of these variables as just nicknames of the variables that will be passed to them when the function is called.
+So, basically what we've done is we've allowed the user to pass us information through the use of function arguments or parameters, specifically two variables called number1 and number2. You can think of these variables as just nicknames of the variables that will be passed to them when the function is called.
 
 This is how we could call the function in our code:
 ```javascript
