@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width"> 
+        <title>repl.it</title> 
+        <link href="style.css" rel="stylesheet" type="text/css" /> 
+    </head> 
+    <body> 
+        <script src="script.js"></script> 
+        <script> 
+            function addTwoNumbers(number1, number2) { 
+                sum = number1 + number2; 
+                console.log(sum); 
+                return sum; 
+            } 
+            function helperFunction() { 
+                num1 = Number(fnum.value); 
+                num2 = Number(snum.value); 
+                result.value = addTwoNumbers(num1, num2); 
+            } 
+        </script> 
+        <h1> Adder </h1> 
+         <label for="fnum">First number:</label> 
+         <input type="number" id="fnum" name="fnum"><br><br> 
+         <label for="snum">Second number:</label> 
+        <input type="number" id="snum" name="snum"><br><br> 
+        <button onclick="helperFunction()">Calculate </button><br><br> 
+        <label for="result">Result:</label> 
+        <input type="number" id="result" name="result"> 
+    </body> 
+</html>
