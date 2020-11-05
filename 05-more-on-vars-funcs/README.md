@@ -118,6 +118,5 @@ addTwoNumbers(num1, num2); // this will result in 8 being printed to the console
 ```
 One thing we notice here is that our variables themselves are not called number1 and number2! In fact, they can be called anything they want!
 
-When we wrote our function, number1 and number2 were just names for the parameters that we used in our function body, so you can think of them as just nicknames for the real variable names that we will know later when the function is called!
-
-This is because we can never predict what variables will be given to us! When using the function, the variables we pass to our function can be called anything, and our function will still deal with them appropriately.
+In this example, the real variable names were `num1` and `num2`, but JavaScript knows that in our function body when we type `number1` that we just mean the first argument passed to the function.
+We now know types of variables in JavaScript and the operations we can do on them, as well as how to write functions in JavaScript with multiple function arguments! We are seriously making progress in having the skills to develop a well-functioning web application!
