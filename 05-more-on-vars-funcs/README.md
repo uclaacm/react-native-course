@@ -70,13 +70,13 @@ Last week we made a function that counted how many times a button was pressed, a
 Let&#39;s take a look at the function we made last week:
 
 ```javascript
-function buttonClick() {
+function buttonClick() { // the function declaration
 
-click = click + 1;
+click = click + 1; //body of the function
 
 document.getElementByID(&#39;num&#39;).innerHTML = click
 
-}
+} // closing brace
 ```
 
 Right now, to demonstrate the parts of a function, we will dissect each line, to hopefully make functions seem a little simpler.
@@ -91,15 +91,15 @@ However, many times we will need the user to give us input data. We are only abl
 
 For example, if we want to create a function that adds two numbers and prints the result to the console log and returns the result as well, it might look something like this:
 ```javascript
-function addTwoNumbers(number1, number2) {
+function addTwoNumbers(number1, number2) { // function declaration and specify function arguments
 
-sum = number1 + number2;
+result = number1 + number2; // adds the two numbers into a variable called result
 
-console.log(sum);
+console.log(result); //prints the sum to the console log
 
-return sum;
+return result; // returns the sum to "whoever" called the function
 
-}
+} // closing brace
 ```
 So, let me take you guys through what this all means. The first line is the function declaration, where we define a function called addTwoNumbers. Since there are words between the parentheses, we know that there are function arguments. The function arguments we have are called number1 and number2.
 
@@ -119,4 +119,50 @@ addTwoNumbers(num1, num2); // this will result in 8 being printed to the console
 One thing we notice here is that our variables themselves are not called number1 and number2! In fact, they can be called anything they want!
 
 In this example, the real variable names were `num1` and `num2`, but JavaScript knows that in our function body when we type `number1` that we just mean the first argument passed to the function.
+
+Additionally, we can easily change this function we've created to do different things. We learned earlier about all the operations we can do on numbers, booleans, and strings. 
+
+So for example, we could easily just change the plus sign in our function body to a multiplication sign and now it'll multiply: (Note: I also changed the function name so that it's more appropriate)
+```javascript
+function multiplyTwoNumbers(number1, number2) { // function declaration and specify function arguments
+
+result = number1 * number2; // multiplies the two numbers into a variable called result
+
+console.log(result); //prints the product to the console log
+
+return result; // returns the product to "whoever" called the function
+
+} 
+```
+
+Or we could change it to divide! :
+```javascript
+function divideTwoNumbers(number1, number2) { // function declaration and specify function arguments
+
+result = number1 / number2; // divides the two numbers into a variable called result
+
+console.log(result); //prints the quotient to the console log
+
+return result; // returns the quotient to "whoever" called the function
+
+} 
+```
+
+We could even put an == to compare them and see if they are equal! Instead of a number result, this will return a boolean result in the form of a number. If the statement is true (i.e. the two numbers are equal) it will return and print 1. If the statement is false(the numbers are not equal), then the function will return and print 0. 
+This is what the function will look like now : 
+
+```javascript
+function compareTwoNumbers(number1, number2) { // function declaration and specify function arguments
+
+result = number1 == number2; // sees if the numbers are equal
+
+console.log(result); //prints 1 or 0 (true or false) to the console log
+
+return result; // returns 1 or 0 (true or false) to "whoever" called the function
+
+} 
+```
+
 We now know types of variables in JavaScript and the operations we can do on them, as well as how to write functions in JavaScript with multiple function arguments! We are seriously making progress in having the skills to develop a well-functioning web application!
+
+Now, let's all try to write the function that can subtract two numbers!
