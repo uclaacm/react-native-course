@@ -14,7 +14,7 @@ let name = "Bob";
 let age = 25;
 ```
 
-[want to expand here]
+Here, *name* and *age* hold two different kinds of data. One is a number and the other is a word. That's easy enough to see. But how exactly do we keep track of what kind of data a variable holds when we code? Well, we use **data types**!
 
 The main data types that you'll use in JavaScript are
 * Number
@@ -44,22 +44,83 @@ let lastName = Bruin;
 console.log(firstName + " " + lastName); // Joe Bruin
 ```
 
-*Note: console.log() is just a function that writes a message to the debugging console*
+*Note: console.log() is a function that writes a message to the debugging console*
 
 What does this look like when you run the code on repl.it?
+![repl example](/05-more-on-vars-funcs/images/repl_ex.png)
 
-![](RackMultipart20201104-4-g0ysye_html_a63e2d43d9297fbd.png)
-Okay, cool! That's enough about strings for now. What about booleans? Can you add AND subtract booleans? What about multiply and divide?
+Unfortunately, we can only add strings. We can't subtract/multiply/divide them.
+What about adding strings and numbers? Strings and booleans? Well, turns out we also can't mix numbers and strings.
 
-### Math with Booleans
+Alright, that's enough about strings for now! What about booleans? 
+
 
 Turns out you can do all of those things! When you use a boolean value in JavaScript, true = 1 and false = 0. If you do arithmetic with booleans, booleans just evaluate to numbers. Like in math, you can't divide by false since that would be dividing by zero, but you can add/subtract/multiply/divide to your heart's content otherwise.
+=======
+### Operations with Booleans
+Booleans are special. Not only can they be added/subtracted/multiplied/divided like numbers, but they can also be operated on logically. Let's look at the arithmetic operations first.
 
-Adding strings and numbers? Strings and booleans?
+
+#### Arithmetic Operations
+So we can add strings, but can you add AND subtract booleans? What about multiply and divide?
+
 
 Although you can mix numbers and booleans in JavaScript, you can't mix numbers and strings.
 
 Let's put this all together with an example combining JavaScript with some HTML.
+=======
+Turns out you can do all of those things! When you use a boolean value in JavaScript, true = 1 and false = 0. If you do arithmetic with booleans, booleans just evaluate to numbers. Like in math, you can't divide by false since that would be dividing by zero, but you can add/subtract/multiply/divide to your heart's content otherwise.
+
+Some examples:
+```javascript
+let bool1 = true; // 1
+let bool2 = false; // 0
+
+// adding/subtracting bools
+console.log(true + false); // prints 1
+console.log(10 - false); // prints 10
+console.log(true - 10); // prints -9
+
+// multiplying/dividing bools 
+console.log(false/true); // prints 0
+console.log(13/true); // prints 13
+console.log(10/false); // ERROR: this is illegal!
+```
+#### Logical Operations
+Recall that booleans also have logical significance. For example, a boolean could represent an on/off switch. If the switch is on, the value would be true. Otherwise, the value would be false.
+
+There are 3 main logical operators that act on booleans. 
+
+Name | Symbol
+-----|-------
+logical and | &&
+logical or | \|\|
+logical not | !
+
+Say we have booleans a and b. 
+a && b is true only when a is true and b is true. If either is false, or if both are false, a && b is false.
+a || b is true when at least one argument is true. If a and b are both true, a || b returns true.
+!a takes the argument and gives the opposite. 
+
+** Note that logical operators convert each operand to a boolean value.**
+(If you want to know more about these things, take a look at this page on [Logical Operators](https://javascript.info/logical-operators).)
+
+Some examples:
+```javascript
+let bool1 = true;
+let bool2 = false;
+
+console.log(bool1 & bool2); // false
+console.log(false & bool1); // false
+console.log(bool1 & 1) // 1
+
+console.log(bool1 || bool2); // true
+
+console.log(!bool2); //true
+```
+
+Let's put this all together with an in-depth example combining variables and your best friend in JavaScript, functions!
+
 
 ## The Anatomy of a Function
 
