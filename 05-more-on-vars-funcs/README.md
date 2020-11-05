@@ -75,7 +75,7 @@ console.log(true - 10); // prints -9
 // multiplying/dividing bools 
 console.log(false/true); // prints 0
 console.log(13/true); // prints 13
-console.log(10/false); // ERROR: this is illegal!
+console.log(10/false); // prints Infinity
 ```
 #### Logical Operations
 Recall that booleans also have logical significance. For example, a boolean could represent an on/off switch. If the switch is on, the value would be true. Otherwise, the value would be false.
