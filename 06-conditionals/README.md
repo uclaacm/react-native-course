@@ -20,7 +20,7 @@ If that boolean variable that represents that condition is True, it will run the
 If you were to think about how you 'use conditional statements' in your own decision making, what would it sound like?  
 Maybe something like: If it's not raining today, I'll go to the park, but if it is raining, I'll just stay home and play Among us.  
 Let's try to convert that to code:  
-``` isRaining = *True or False* 
+```js isRaining = *True or False* 
     if (!isRaining){
         goToPark()
     }
