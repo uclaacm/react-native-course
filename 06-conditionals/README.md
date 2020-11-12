@@ -29,3 +29,64 @@ Let's try to convert that to code:
     }
 ```
 If you think about it, you use "conditional statements" many times a day in your own thinking, so when you approach coding them out, try to think about what you'd do if you were the one making the decision you want your code to make. 
+
+For example in our daily life, we often make sequential decisions. For example if I want to deliver homemade baked goods to my friends I would have to consider what each person's favorite desert is
+```js
+    let desert;
+    if(name == "Matt"){
+        desert = "brownies";
+    }
+    else if (name == "Chase"){
+        desert = "cake";
+    }
+    else {
+        desert = "chocolate chip cookies";
+    }
+    console.log("I should bring " + desert + " for " + name);
+```
+How would you translate this code snippet translate to English? (Pause to think about this for a moment)
+
+You might end up with something like this:
+```
+If I'm delivering deserts to Matt, I should bring brownies.
+If I'm not delivering to Matt but I'm delievering to Chase then I should bring cake.
+Else if I'm not delievering to either Matt or Chase I should bring chocolate chip cookies.
+```
+
+Note that the order of our `if` and `else if` statements is important. If we instead wrote
+```js
+    let desert;
+    if(name == "Chase"){
+        desert = "cake";
+    }
+    else if (name == "Matt"){
+        desert = "brownies";
+    }
+    else {
+        desert = "chocolate chip cookies";
+    }
+    console.log("I should bring " + desert + " for " + name);
+```
+Our English translation would end up looking like 
+```
+If I'm delivering to Chase then I should bring cake.
+If I'm not delivering to Chase, but I'm delivering to Matt, I should bring brownies.
+Else if I'm not delievering to either Matt or Chase I should bring chocolate chip cookies.
+```
+
+This difference is very subtle here, and probably won't end up affecting the larger behavior of our conditional statement, but there *is a difference*. The ordering of our conditional matters because our code is run sequentially.
+
+The only way we consider the line `else if (name == "Matt"){` in the above example is if the first conditional evaluates to false. In other words `name != "Chase"`.
+
+Here's an example to demonstrate this. For what range of hunger will cookiesEaten be set to exactly 10 cookies?
+```js
+    if (hunger < 4) {
+        cookiesEaten = 5;
+    }
+    else if(hunger > 9) {
+        cookiesEaten = 15;
+    }
+    else {
+        cookiesEaten = 10;
+    }
+```
