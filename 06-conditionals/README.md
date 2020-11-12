@@ -90,3 +90,6 @@ Here's an example to demonstrate this. For what range of hunger will cookiesEate
         cookiesEaten = 10;
     }
 ```
+Did you guess as long as hunger is between 4 and 9? If so that's right!
+
+Hopefully this example demonstrates why conditionals are so powerful. Depending how hungry we are, conditionals allow our code to adjust to that, making our program and webpages more reactive.
