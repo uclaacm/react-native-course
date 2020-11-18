@@ -26,6 +26,8 @@ Here's a roadmap for all of the content that we cover, week-by-week:
 2. [Week 2: Intro to HTML & CSS](https://github.com/uclaacm/react-native-course-20-21/tree/master/02-intro-html-css)
 3. [Week 3: First Steps with GitHub](https://github.com/uclaacm/react-native-course-20-21/tree/master/03-github-first-steps)
 4. [Week 4: Intro to JS](https://github.com/uclaacm/react-native-course-20-21/tree/master/04-intro-to-js)
+5. [Week 5: More on Variables and Functions](https://github.com/uclaacm/react-native-course-20-21/tree/master/05-more-on-vars-funcs)
+6. [Week 6: Conditionals and Control Flow](https://github.com/uclaacm/react-native-course-20-21/tree/master/06-conditionals)
 
 (more coming soon!)
 
