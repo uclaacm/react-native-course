@@ -14,7 +14,8 @@ function calculateAnswer(results){
   let twoScore = results[2]
   let threeScore = results[3]
   let fourScore = results[4]
-  let result = "hello" //this shoud be    changed!
+  let result = "hello" //this shoud be changed!
+
   //Start with some if statments!
   return "hello"
 }
@@ -23,10 +24,24 @@ function calculateAnswer(results){
 let Quiz = function(){
   let self = this;
   this.init = function(){
-    self._bindEvents();
+    $('.quiz-answer').on('click', function(){
+      var $this = $(this)
+      var $answers = $this.closest('ul[data-quiz-question]');
+      self._pickAnswer($this, $answers);
+
+      if ( self._isComplete() ) {
+        // scroll to answer section
+        $('html, body').animate({
+          scrollTop: $('.quiz-result').offset().top
+        });
+
+        self._showResult( self._calcResult() );
+        $('.quiz-answer').off('click');
+      }
+    });
   }
   this.questionNumber = 1
-  this.counts = {1: 0, 2:0, 3:0, 4:0}
+  this.counts = {1:0, 2:0, 3:0, 4:0}
 
   // TODO
   //TODO
@@ -70,25 +85,7 @@ let Quiz = function(){
   this._showResult = function(result){
     $('.quiz-result').addClass('good').html(result);
   }
-
-  this._bindEvents = function(){
-    $('.quiz-answer').on('click', function(){
-      var $this = $(this),
-          $answers = $this.closest('ul[data-quiz-question]');
-      self._pickAnswer($this, $answers);
-      if ( self._isComplete() ) {
-
-        // scroll to answer section
-        $('html, body').animate({
-          scrollTop: $('.quiz-result').offset().top
-        });
-
-        self._showResult( self._calcResult() );
-        $('.quiz-answer').off('click');
-
-      }
-    });
-  }
 }
+
 var quiz = new Quiz();
 quiz.init();
