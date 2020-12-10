@@ -25,27 +25,17 @@ let Quiz = function(){
   let myQuiz = this;
   this.init = function(){
     $('.quiz-answer').on('click', function(){
-      var selectedAnswer = $(this)
-      var allPossibleAnswers = selectedAnswer.closest('ul[data-quiz-question]');
-      myQuiz._pickAnswer(selectedAnswer, allPossibleAnswers);
+      var selectedAnswer = $(this);
+      pickAnswer(selectedAnswer);
 
       if ( myQuiz._isComplete() ) {
-        // scroll to answer section
-        $('html, body').animate({
-          scrollTop: $('.quiz-result').offset().top
-        });
-
+        scrollToAnswerSection();
         myQuiz._showResult( myQuiz._calcResult() );
-        $('.quiz-answer').off('click');
+        deactivateQuiz();
       }
     });
   }
   this.catagoryCounts = {1:0, 2:0, 3:0, 4:0}
-
-  this._pickAnswer = function(selectedAnswer, allPossibleAnswers){
-    allPossibleAnswers.find('.quiz-answer').removeClass('chosen');
-    selectedAnswer.addClass('chosen');
-  }
 
   this._calcResult = function(){
     let chosenAnswers = []
@@ -86,6 +76,22 @@ function getNumberCompleteAnswers() {
     }
   });
   return numCompleteAnswers;
+}
+
+function pickAnswer(selectedAnswer){
+  var allPossibleAnswers = selectedAnswer.closest('ul[data-quiz-question]');
+  allPossibleAnswers.find('.quiz-answer').removeClass('chosen');
+  selectedAnswer.addClass('chosen');
+}
+
+function scrollToAnswerSection(){
+  $('html, body').animate({
+    scrollTop: $('.quiz-result').offset().top
+  });
+}
+
+function deactivateQuiz() {
+  $('.quiz-answer').off('click');
 }
 
 var quiz = new Quiz();
