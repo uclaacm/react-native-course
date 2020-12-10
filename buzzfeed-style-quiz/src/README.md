@@ -11,11 +11,11 @@ Think about what you would find in a normal English dictionary. For example, if 
 Brownie: a baked rectangle of rich chocolate cake without the addition of blueberries
 ```
 
-We might logically call the above a **dictionary entry** with the word `Brownie` the description `a baked rectangle of rich chocolate cake without the addition of blueberries`.
+We might logically call the above a **dictionary entry** with the word `Brownie` and the description `a baked rectangle of rich chocolate cake without the addition of blueberries`.
 
 In JavaScript, we use slightly different terminology when referencing dictionaries. The word `Brownie` is called a **key** and the description `a baked rectangle of rich chocolate cake without the addition of blueberries` is called a **value**.
 
-To declare a variable to be a dictionary, simply use curly braces `{}` and a colon `:` to separate your **key** from your **value**. Note that we can use commas `,` to separate dictionary entries.
+To declare a dictionary variable, simply use curly braces `{}` and a colon `:` to separate your **key** from your **value**. Note that we can use commas `,` to separate dictionary entries.
 ```js
 let my_recipe_dictionary = {
   "Brownie": "a baked rectangle of rich chocolate cake without the addition of blueberries",
