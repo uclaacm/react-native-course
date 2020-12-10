@@ -68,12 +68,7 @@ let Quiz = function(){
   }
 
   this._isComplete = function(){
-    var answersComplete = 0;
-    $('ul[data-quiz-question]').each(function(){
-      if ( $(this).find('.quiz-answer.active').length ) {
-        answersComplete++;
-      }
-    });
+    var answersComplete = getNumberCompleteAnswers();
     if ( answersComplete >= 6 ) {
       return true;
     }
@@ -85,6 +80,17 @@ let Quiz = function(){
   this._showResult = function(result){
     $('.quiz-result').addClass('good').html(result);
   }
+}
+
+// More magic that make thing work behind the scenes!
+function getNumberCompleteAnswers() {
+  let numCompleteAnswers = 0;
+  $('ul[data-quiz-question]').each(function(){
+    if ( $(this).find('.quiz-answer.active').length ) {
+      numCompleteAnswers++;
+    }
+  });
+  return numCompleteAnswers;
 }
 
 var quiz = new Quiz();
