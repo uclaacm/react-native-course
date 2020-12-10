@@ -67,14 +67,14 @@ let Quiz = function(){
   }
 }
 
-// More magic that make thing work behind the scenes!
+// More magic that makes things work behind the scenes!
 // We've moved most of the complex logic into these
 // helper functions so you won't have to worry about
-// it (and so the above code reads more like english).
+// it (and so the above code reads more like English).
 // You don't have to touch any of the code below this
 // comment, and messing with it might break your quiz.
 // If you're curious, however, feel free to see if you
-// can understand what's going on behind the scenes!
+// can understand what's going on here!
 function getNumberCompleteAnswers() {
   let numCompleteAnswers = 0;
   $('ul[data-quiz-question]').each(function(){
