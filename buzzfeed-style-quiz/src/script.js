@@ -46,14 +46,14 @@ let Quiz = function(){
   // TODO
   //TODO
   this._pickAnswer = function($answer, $answers){
-    $answers.find('.quiz-answer').removeClass('active');
-    $answer.addClass('active');
+    $answers.find('.quiz-answer').removeClass('chosen');
+    $answer.addClass('chosen');
   }
 
   this._calcResult = function(){
     let chosenAnswers = []
     $('ul[data-quiz-question]').each(function(questionNumber, question){
-      var chosenAnswer = $(question).find('.quiz-answer.active').data('quiz-answer')
+      var chosenAnswer = $(question).find('.quiz-answer.chosen').data('quiz-answer')
       chosenAnswers.push(chosenAnswer);
     });
     console.log(chosenAnswers)
@@ -84,7 +84,7 @@ let Quiz = function(){
 function getNumberCompleteAnswers() {
   let numCompleteAnswers = 0;
   $('ul[data-quiz-question]').each(function(){
-    if ( $(this).find('.quiz-answer.active').length ) {
+    if ( $(this).find('.quiz-answer.chosen').length ) {
       numCompleteAnswers++;
     }
   });
