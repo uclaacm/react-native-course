@@ -38,12 +38,9 @@ let Quiz = function(){
   this.catagoryCounts = {1:0, 2:0, 3:0, 4:0}
 
   this._calcResult = function(){
-    let chosenAnswers = []
-    $('ul[data-quiz-question]').each(function(questionNumber, question){
-      var chosenAnswer = $(question).find('.quiz-answer.chosen').data('quiz-answer')
-      chosenAnswers.push(chosenAnswer);
-    });
+    let chosenAnswers = getAllChosenAnswers()
     console.log(chosenAnswers)
+
     for(let i = 0; i < chosenAnswers.length; i++){
       let answer = chosenAnswers[i]
       let catagory = questions[i+1][answer]
@@ -92,6 +89,15 @@ function scrollToAnswerSection(){
 
 function deactivateQuiz() {
   $('.quiz-answer').off('click');
+}
+
+function getAllChosenAnswers() {
+  let chosenAnswers = [];
+  $('ul[data-quiz-question]').each(function(questionNumber, question){
+    var chosenAnswer = $(question).find('.quiz-answer.chosen').data('quiz-answer')
+    chosenAnswers.push(chosenAnswer);
+  });
+  return chosenAnswers;
 }
 
 var quiz = new Quiz();
