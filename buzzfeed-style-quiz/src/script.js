@@ -1,12 +1,13 @@
 //Big thanks to tgallimore for graciously providing the
 //groundwork for this code skeleton!
-let questions = { //This should be changed!
-  1 : {'a':1,'b':2,'c':3,'d':4},
-  2:  {'a':2,'b':3,'c':4,'d':1},
-  3:  {'a':2,'b':4,'c':1,'d':3},
-  4:  {'a':3,'b':1,'c':2,'d':4},
-  5:  {'a':1,'b':2,'c':3,'d':4},
-  6:  {'a':1,'b':2,'c':3,'d':4}
+let questions = {
+  //This should be changed!
+  'Q1':  {'a':1,'b':2,'c':3,'d':4},
+  'Q2':  {'a':2,'b':3,'c':4,'d':1},
+  'Q3':  {'a':2,'b':4,'c':1,'d':3},
+  'Q4':  {'a':3,'b':1,'c':2,'d':4},
+  'Q5':  {'a':1,'b':2,'c':3,'d':4},
+  'Q6':  {'a':1,'b':2,'c':3,'d':4}
 }
 
 function calculateAnswer(results){
@@ -43,7 +44,8 @@ let Quiz = function(){
 
     for(let i = 0; i < chosenAnswers.length; i++){
       let answer = chosenAnswers[i]
-      let catagory = questions[i+1][answer]
+      let questionNumber = getQuestionNumber(i);
+      let catagory = questions[questionNumber][answer]
       this.catagoryCounts[catagory] += 1
     }
     return calculateAnswer(this.catagoryCounts)
@@ -66,6 +68,13 @@ let Quiz = function(){
 }
 
 // More magic that make thing work behind the scenes!
+// We've moved most of the complex logic into these
+// helper functions so you won't have to worry about
+// it (and so the above code reads more like english).
+// You don't have to touch any of the code below this
+// comment, and messing with it might break your quiz.
+// If you're curious, however, feel free to see if you
+// can understand what's going on behind the scenes!
 function getNumberCompleteAnswers() {
   let numCompleteAnswers = 0;
   $('ul[data-quiz-question]').each(function(){
@@ -108,6 +117,8 @@ function renderResult(result) {
 highlightResultGreen = () => { $('.quiz-result').addClass('good') }
 highlightResultOrange = () => { $('.quiz-result').addClass('mid') }
 highlightResultRed = () => { $('.quiz-result').addClass('bad') }
+
+getQuestionNumber = (i) => {return `Q${i+1}`}
 
 var quiz = new Quiz();
 quiz.init();
