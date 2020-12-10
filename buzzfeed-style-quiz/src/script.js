@@ -41,7 +41,7 @@ let Quiz = function(){
     });
   }
   this.questionNumber = 1
-  this.counts = {1:0, 2:0, 3:0, 4:0}
+  this.catagoryCounts = {1:0, 2:0, 3:0, 4:0}
 
   // TODO
   //TODO
@@ -51,20 +51,18 @@ let Quiz = function(){
   }
 
   this._calcResult = function(){
-    let test = []
-    $('ul[data-quiz-question]').each(function(i){
-      var $this = $(this),
-          chosenAnswer = $this.find('.quiz-answer.active').data('quiz-answer'),
-          correctAnswer;
-    test.push(chosenAnswer)
+    let chosenAnswers = []
+    $('ul[data-quiz-question]').each(function(questionNumber, question){
+      var chosenAnswer = $(question).find('.quiz-answer.active').data('quiz-answer')
+      chosenAnswers.push(chosenAnswer);
     });
-      console.log(test)
-      for(let i =0; i< test.length;i++){
-      let answer = test[i]
-      let cata = questions[i+1][answer]
-      this.counts[cata] += 1
-      }
-    return calculateAnswer(this.counts)
+    console.log(chosenAnswers)
+    for(let i = 0; i < chosenAnswers.length; i++){
+      let answer = chosenAnswers[i]
+      let catagory = questions[i+1][answer]
+      this.catagoryCounts[catagory] += 1
+    }
+    return calculateAnswer(this.catagoryCounts)
   }
 
   this._isComplete = function(){
