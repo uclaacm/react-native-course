@@ -60,7 +60,8 @@ let Quiz = function(){
   }
 
   this._showResult = function(result){
-    $('.quiz-result').addClass('good').html(result);
+    renderResult(result);
+    highlightResultGreen();
   }
 }
 
@@ -99,6 +100,14 @@ function getAllChosenAnswers() {
   });
   return chosenAnswers;
 }
+
+function renderResult(result) {
+  $('.quiz-result').html(result);
+}
+
+highlightResultGreen = () => { $('.quiz-result').addClass('good') }
+highlightResultOrange = () => { $('.quiz-result').addClass('mid') }
+highlightResultRed = () => { $('.quiz-result').addClass('bad') }
 
 var quiz = new Quiz();
 quiz.init();
