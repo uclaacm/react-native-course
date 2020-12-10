@@ -22,32 +22,29 @@ function calculateAnswer(results){
 
 
 let Quiz = function(){
-  let self = this;
+  let myQuiz = this;
   this.init = function(){
     $('.quiz-answer').on('click', function(){
-      var $this = $(this)
-      var $answers = $this.closest('ul[data-quiz-question]');
-      self._pickAnswer($this, $answers);
+      var selectedAnswer = $(this)
+      var allPossibleAnswers = selectedAnswer.closest('ul[data-quiz-question]');
+      myQuiz._pickAnswer(selectedAnswer, allPossibleAnswers);
 
-      if ( self._isComplete() ) {
+      if ( myQuiz._isComplete() ) {
         // scroll to answer section
         $('html, body').animate({
           scrollTop: $('.quiz-result').offset().top
         });
 
-        self._showResult( self._calcResult() );
+        myQuiz._showResult( myQuiz._calcResult() );
         $('.quiz-answer').off('click');
       }
     });
   }
-  this.questionNumber = 1
   this.catagoryCounts = {1:0, 2:0, 3:0, 4:0}
 
-  // TODO
-  //TODO
-  this._pickAnswer = function($answer, $answers){
-    $answers.find('.quiz-answer').removeClass('chosen');
-    $answer.addClass('chosen');
+  this._pickAnswer = function(selectedAnswer, allPossibleAnswers){
+    allPossibleAnswers.find('.quiz-answer').removeClass('chosen');
+    selectedAnswer.addClass('chosen');
   }
 
   this._calcResult = function(){
