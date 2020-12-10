@@ -26,7 +26,7 @@ let Quiz = function(){
   let myQuiz = this;
   this.init = function(){
     $('.quiz-answer').on('click', function(){
-      var selectedAnswer = $(this);
+      let selectedAnswer = $(this);
       pickAnswer(selectedAnswer);
 
       if ( myQuiz._isComplete() ) {
@@ -52,7 +52,7 @@ let Quiz = function(){
   }
 
   this._isComplete = function(){
-    var answersComplete = getNumberCompleteAnswers();
+    let answersComplete = getNumberCompleteAnswers();
     if ( answersComplete >= 6 ) {
       return true;
     }
@@ -86,7 +86,7 @@ function getNumberCompleteAnswers() {
 }
 
 function pickAnswer(selectedAnswer){
-  var allPossibleAnswers = selectedAnswer.closest('ul[data-quiz-question]');
+  let allPossibleAnswers = selectedAnswer.closest('ul[data-quiz-question]');
   allPossibleAnswers.find('.quiz-answer').removeClass('chosen');
   selectedAnswer.addClass('chosen');
 }
@@ -104,7 +104,7 @@ function deactivateQuiz() {
 function getAllChosenAnswers() {
   let chosenAnswers = [];
   $('ul[data-quiz-question]').each(function(questionNumber, question){
-    var chosenAnswer = $(question).find('.quiz-answer.chosen').data('quiz-answer')
+    let chosenAnswer = $(question).find('.quiz-answer.chosen').data('quiz-answer')
     chosenAnswers.push(chosenAnswer);
   });
   return chosenAnswers;
@@ -120,5 +120,5 @@ highlightResultRed = () => { $('.quiz-result').addClass('bad') }
 
 getQuestionNumber = (i) => {return `Q${i+1}`}
 
-var quiz = new Quiz();
+let quiz = new Quiz();
 quiz.init();
