@@ -17,8 +17,6 @@ function calculateAnswer(results){
   let result = "hello" //this shoud be    changed!
   //Start with some if statments!
   return "hello"
-
-
 }
 
 
@@ -52,11 +50,7 @@ let Quiz = function(){
       this.counts[cata] += 1
       }
     return calculateAnswer(this.counts)
-
   }
-
-
-
 
   this._isComplete = function(){
     var answersComplete = 0;
@@ -72,12 +66,10 @@ let Quiz = function(){
       return false;
     }
   }
+
   this._showResult = function(result){
     $('.quiz-result').addClass('good').html(result);
   }
-
-
-
 
   this._bindEvents = function(){
     $('.quiz-answer').on('click', function(){
