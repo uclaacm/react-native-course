@@ -1,14 +1,14 @@
 
 ##Why learn React? 
 
-![salary](ims/react_salary.png)
+![salary](/ims/react_salary.png)
 
 *We're kidding (mostly)* 
 
 Believe it or not, that's actually our *least important* reason to learn react.  
 After all, fat stacks of cash don't make working with broken technologies any more fufilling.  
 
-![diminishing](ims/dimreturns.png)
+![diminishing](/ims/dimreturns.png)
 
 No, the reason we decided spend all this time writing this curriculum and teaching it is because React is so powerful and easy to use that we believe that it's accessible enough that people will go from saying:  
  **"I want to be an engineer because it'll make me a lot of money"**  
@@ -27,7 +27,7 @@ There are so many different languages and frameworks and technologies and paradi
 Remember, any application that interacts with the real world (users) **must** be dynamic. People change, and our applications need to be able to react to that. 
 In the olden days, when a webpage encountered some change, you'd have to manually change the **DOM**, which looks something like...
 
-![DOM](ims/domimage.png)
+![DOM](/ims/domimage.png)
 
 ...this is for a very simple page. As you can imagine, for any real website, this would be a nightmare to manage, and would be a huge source of **bugs**.
 
