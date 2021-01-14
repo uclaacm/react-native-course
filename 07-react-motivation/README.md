@@ -81,7 +81,7 @@ Consider Twitter:
  ```
  This block of code represents just 3 tweets, yet it's over 50 lines of code.  
  Using React, we could write
- ```jsx
+ ```
 return(
 <>
 tweets.map((tweetData) =>
