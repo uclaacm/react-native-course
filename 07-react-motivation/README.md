@@ -1,5 +1,5 @@
 
-#Why learn React? 
+# Why learn React? 
 
 ![salary](ims/react_salary.png)
 
@@ -22,7 +22,7 @@ There are so many different languages and frameworks and technologies and paradi
 **B. Will I enjoy the time I spend learning about this?** 
 
 *For React, both A and B are a resounding yes!*
-##I. React is good at...reacting 
+## I. React is good at...reacting 
 
 Remember, any application that interacts with the real world (users) **must** be dynamic. People change, and our applications need to be able to react to that. 
 In the olden days, when a webpage encountered some change, you'd have to manually change the **DOM**, which looks something like...
@@ -35,7 +35,7 @@ We'll be going more in-depth about this in the coming weeks, but React lets you 
 
 This is **huge** in writing clean, bug-free applications. 
 
-##II. React is incredibly aesthetically pleasing (and saves you time)
+## II. React is incredibly aesthetically pleasing (and saves you time)
 
 The psychological impact of having clean, concise code is often underappreciated. When your projects start to get big, navigating through your code can feel like running through a maze if it's messy and hard to understand. 
 Since programming is utimately a creative process, we want to make our work as smooth as possible. 
