@@ -41,7 +41,7 @@ The psychological impact of having clean, concise code is often underappreciated
 Since programming is utimately a creative process, we want to make our work as smooth as possible. 
 
 Consider Twitter:
-```js
+```html
 <div>
     <div>
     <img src="profile.png">
@@ -81,7 +81,7 @@ Consider Twitter:
  ```
  This block of code represents just 3 tweets, yet it's over 50 lines of code.  
  Using React, we could write
- ```js
+ ```jsx
 return(
 <>
 tweets.map((tweetData) =>
