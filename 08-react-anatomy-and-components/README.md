@@ -38,3 +38,32 @@ React chooses to use functions to implement components exactly becase **function
 
 Recall how the Anatomy of React is made up of components, so putting all this information together we can say that
 > The components that create the Anatomy of our React application will be written as Javascript functions.
+
+### Creating Functional Components
+Let's actually look at how we would write a Functional Component in React.
+```jsx
+function Hello(){
+  return (
+    <div>
+      <h1>Hello Evan!</h1>
+    </div>
+  );
+}
+```
+Here we've defined a functional component called `Hello` that takes no input and returns a bit of `HTML`.
+
+That might seem odd, but think back to what `HTML` does: create the structure of webpages. With that in mind, for React Functional Components to actually create webpages, they have to return `HTML`. (We can think of `HTML` as the building blocks that make a webpage).
+
+What if we wanted to use our `Hello` component within a real webpage?
+```jsx
+<div className="App">
+  <p>
+    This is a React Application!
+  </p>
+  <Hello/>
+  <p>
+    What brings you to this webpage?
+  </p>
+</div>
+```
+As shown above, we can simply use `<Hello/>` as if it were any other `HTML` tag. Neat!
