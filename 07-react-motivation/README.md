@@ -18,7 +18,7 @@ No, the reason we decided spend all this time writing this curriculum and teachi
 *A side note:* 
 There are so many different languages and frameworks and technologies and paradigms that you can get analysis paralysis just by trying to figure out what you should learn. A good rule of thumb is to ask yourself:  
 **A. Will learning this save me time and effort the next time I want to make something cool?**  
-*and*
+*and*  
 **B. Will I enjoy the time I spend learning about this?** 
 
 *For React, both A and B are a resounding yes!*
