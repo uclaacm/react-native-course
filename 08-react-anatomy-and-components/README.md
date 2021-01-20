@@ -90,3 +90,23 @@ Here we introduce `props` (short for properties) which is an input to our `Hello
   </p>
 </div>
 ```
+Let's finally extend our `Hello` component to implement some logic. What is we don't know someone's name? Currently our website looks like this:
+![no name bad ui](images/no_name_bad_ui.png)
+Not a good user experience! 
+
+We should edit our component like so
+```jsx
+function Hello(props){
+  let user_name = props.name
+  if (!user_name){
+    user_name = "Stranger"
+  }
+  return (
+    <div>
+      <h1>Hello {user_name}!</h1>
+    </div>
+  );
+}
+```
+Note how we've now created a *variable* `user_name` to hold the property `props.name`. If `user_name` doesn't contain a name (i.e. contains nothing) then we'll set it to the string `"Stranger"`, allowing for a much cleaner user interface!
+![no name bad ui](images/no_name_good_ui.png)
