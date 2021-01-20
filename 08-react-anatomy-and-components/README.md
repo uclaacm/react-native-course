@@ -67,3 +67,26 @@ What if we wanted to use our `Hello` component within a real webpage?
 </div>
 ```
 As shown above, we can simply use `<Hello/>` as if it were any other `HTML` tag. Neat!
+
+But many of you may have noticed an issue with our Functional Component, it only displays one name! The world is complex, with a whole assortment of names, so our component must be able to adapt to all that complexity.
+```jsx
+function Hello(props){
+  return (
+    <div>
+      <h1>Hello {props.name}!</h1>
+    </div>
+  );
+}
+```
+Here we introduce `props` (short for properties) which is an input to our `Hello` functional component. You can think of `props` as a JavaScript object that holds all the information that makes our functional component work. We can edit our `<Hello/>` tag to now take an input called `name`.
+```jsx
+<div className="App">
+  <p>
+    This is a React Application!
+  </p>
+  <Hello name={"Sam"}/>
+  <p>
+    What brings you to this webpage?
+  </p>
+</div>
+```
