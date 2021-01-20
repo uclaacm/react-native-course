@@ -1,16 +1,16 @@
 # Let's learn React
-Now that we've (hopefully) convinced you that React is a powerful tool for creating applications, let's dive into the nitty gritty of React.
+Now that we've (hopefully) convinced you that React is a powerful tool for creating applications, let's dive into the nitty gritty of how to write React.
 
 ## Anatomy of React
 [TODO] Sam + Chase
 ## React Functional Components
-Woah, that looks like a real alphabet soup: `React Functional Components.` It turns out, it's just another example of Computer Scientists making names sound more complicated than they need to be. Don't worry if it doesn't make sense right now, let's dissect it piece by piece.
+Woah, that looks like a real alphabet soup: `React Functional Components.` It turns out it's just another example of Computer Scientists making names sound more complicated than they need to be. Don't worry if it doesn't make sense right now, let's dissect it piece by piece.
 
 ### A brief review of functions
-Let's first analyze `Functional Components` What does this mean? In an English sentence, we can say that
+Let's first analyze `Functional Components`. What does this mean? In an English sentence, we can say that
 > The components that make up our application will be written as Javascript functions
 
-Let's review Javascript functions briefly, and see why we choose to represent our web application components in this way.
+Let's review Javascript functions briefly and see why we choose to represent our web application components in this way.
 ```js
 function calc_num_cookies(input){
   let output = 0;
