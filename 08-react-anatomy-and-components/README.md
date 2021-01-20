@@ -1,5 +1,4 @@
 # Let's learn React
-
 Now that we've (hopefully) convinced you that React is a powerful tool for creating applications, let's dive into the nitty gritty of React.
 
 ## Anatomy of React
@@ -12,7 +11,6 @@ Let's first analyze `Functional Components` What does this mean? In an English s
 > The components that make up our application will be written as Javascript functions
 
 Let's review Javascript functions briefly, and see why we choose to represent our web application components in this way.
-
 ```js
 function calc_num_cookies(input){
   let output = 0;
@@ -33,8 +31,7 @@ calc_num_cookies(999)
 calc_num_cookies(0.22)
 "7 chocolate chip cookies"
 ```
-
-React chooses to use functions to implement components exactly becase **functions encapsulate complexity**, or in other words, functions hide implementations that we might not care about.
+React chooses to use functions to implement components exactly becauses **functions encapsulate complexity**, or in other words, functions hide implementations that we might not care about.
 
 Recall how the Anatomy of React is made up of components, so putting all this information together we can say that
 > The components that create the Anatomy of our React application will be written as Javascript functions.
@@ -52,9 +49,9 @@ function Hello(){
 ```
 Here we've defined a functional component called `Hello` that takes no input and returns a bit of `HTML`.
 
-That might seem odd, but think back to what `HTML` does: create the structure of webpages. With that in mind, for React Functional Components to actually create webpages, they have to return `HTML`. (We can think of `HTML` as the building blocks that make a webpage).
+That might seem odd, but think back to what `HTML` does: create the structure of a webpage. With that in mind, for React Functional Components to actually be useful, they have to return `HTML` as the building blocks to make our application.
 
-What if we wanted to use our `Hello` component within a real webpage?
+What if we wanted to use our `Hello` component we just created?
 ```jsx
 <div className="App">
   <p>
@@ -68,7 +65,7 @@ What if we wanted to use our `Hello` component within a real webpage?
 ```
 As shown above, we can simply use `<Hello/>` as if it were any other `HTML` tag. Neat!
 
-But many of you may have noticed an issue with our Functional Component, it only displays one name! The world is complex, with a whole assortment of names, so our component must be able to adapt to all that complexity.
+But you may have noticed an issue with our Functional Component, it only displays one name! The world is complex, with a whole assortment of names, so our component must be able to adapt to all that complexity.
 ```jsx
 function Hello(props){
   return (
@@ -80,7 +77,7 @@ function Hello(props){
 ```
 Here we introduce `props` (short for properties) which is an input to our `Hello` functional component. You can think of `props` as a JavaScript object that holds all the information that makes our functional component work. In this case, our `props` object contains the variable `name`
 
-We can edit our `<Hello/>` tag to now take an input called `name`. Note how it's spelled exactly the same and in the same case as our new property.
+We can edit our `<Hello/>` tag to now take an attribute called `name`. Note how it's spelled exactly the same and in the same case as our new property.
 ```jsx
 <div className="App">
   <p>
@@ -110,7 +107,7 @@ function Hello(props){
   );
 }
 ```
-Note how we've now created a *variable* `user_name` to hold the property `props.name`. If `user_name` doesn't contain a name (i.e. contains nothing) then we'll set it to the string `"Stranger"`, allowing for a much cleaner user interface!
+Note how we've created a *variable* `user_name` to hold the property `props.name`. If `user_name` doesn't contain a name (i.e. contains nothing) then we'll set it to the string `"Stranger"`, allowing for a much cleaner user interface!
 ![no name bad ui](images/no_name_good_ui.png)
 
 ## The big picture
@@ -132,7 +129,7 @@ return (
   </div>
 );
 ```
-everytime, we can simply just use
+everytime we need to display a hello message, we can simply just use
 ```jsx
 <Hello name={"Chase"} />
 <Hello name={"Alice"} />
