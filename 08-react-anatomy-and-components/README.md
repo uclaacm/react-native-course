@@ -78,7 +78,9 @@ function Hello(props){
   );
 }
 ```
-Here we introduce `props` (short for properties) which is an input to our `Hello` functional component. You can think of `props` as a JavaScript object that holds all the information that makes our functional component work. We can edit our `<Hello/>` tag to now take an input called `name`.
+Here we introduce `props` (short for properties) which is an input to our `Hello` functional component. You can think of `props` as a JavaScript object that holds all the information that makes our functional component work. In this case, our `props` object contains the variable `name`
+
+We can edit our `<Hello/>` tag to now take an input called `name`. Note how it's spelled exactly the same and in the same case as our new property.
 ```jsx
 <div className="App">
   <p>
@@ -110,3 +112,31 @@ function Hello(props){
 ```
 Note how we've now created a *variable* `user_name` to hold the property `props.name`. If `user_name` doesn't contain a name (i.e. contains nothing) then we'll set it to the string `"Stranger"`, allowing for a much cleaner user interface!
 ![no name bad ui](images/no_name_good_ui.png)
+
+## The big picture
+So what have we learned?
+
+[TODO] Sam + Chase about anatomy
+
+The anatomy of React is comprised of components, and we've learned how to write React Functional Components.
+
+We're using functions to *encapsulate complexity* and hide complex implementations of the behavior we want out of our components. Instead of having to write the blob of code:
+```jsx
+let user_name = props.name
+if (!user_name){
+  user_name = "Stranger"
+}
+return (
+  <div>
+    <h1>Hello {user_name}!</h1>
+  </div>
+);
+```
+everytime, we can simply just use
+```jsx
+<Hello name={"Chase"} />
+<Hello name={"Alice"} />
+<Hello name={"Sam"} />
+<Hello name={""} />
+```
+Our code is more compact, it's easier to read, and it can *React* to the dynmiac world (pun intended). For our `Hello` component, it will change what is displayed on our application based on the `props.name` input it receives.
