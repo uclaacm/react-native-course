@@ -183,8 +183,6 @@ Note how we've created a *variable* `user_name` to hold the property `props.name
 ## The big picture
 So what have we learned?
 
-[TODO] Sam + Chase about anatomy
-
 The anatomy of React is comprised of components, and we've learned how to write React Functional Components.
 
 We're using functions to *encapsulate complexity* and hide complex implementations of the behavior we want out of our components. Instead of having to write the blob of code:
