@@ -160,7 +160,9 @@ We can edit our `<Hello/>` tag to now take an attribute called `name`. Note how 
 </div>
 ```
 Let's finally extend our `Hello` component to implement some logic. What is we don't know someone's name? Currently our website looks like this:
+
 ![no name bad ui](images/no_name_bad_ui.png)
+
 Not a good user experience! 
 
 We should edit our component like so
@@ -178,7 +180,8 @@ function Hello(props){
 }
 ```
 Note how we've created a *variable* `user_name` to hold the property `props.name`. If `user_name` doesn't contain a name (i.e. contains nothing) then we'll set it to the string `"Stranger"`, allowing for a much cleaner user interface!
-![no name bad ui](images/no_name_good_ui.png)
+
+![no name good ui](images/no_name_good_ui.png)
 
 ## The big picture
 So what have we learned?
