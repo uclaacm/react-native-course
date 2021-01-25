@@ -7,7 +7,7 @@ Say you have an assignment where you need to write an essay. When you're done, y
 Let's see how a functional component can help you create a header for your blog article.
 
 First, a refresher on how we'd do this in HTML.
-```
+```html
 <html>
   <p>FirstName LastName</p>
   <p>month-day-year</p>
