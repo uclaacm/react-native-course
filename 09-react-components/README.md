@@ -34,7 +34,7 @@ But wait a sec-- what's this `props` business all about? And why are there `{ }`
 
 Now we can use this component in our function App, which gets exported. You can use this component with the `<Name />` tag. Since our function uses the variables `first` and `last`, we need to make sure that we include the attributes `first` and `last` when we use our Name tag, like this:
 
-```
+```jsx
 <Name first={"FirstName"} last={"LastName"} />
 ```
 
