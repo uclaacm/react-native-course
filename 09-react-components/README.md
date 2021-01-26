@@ -15,7 +15,7 @@ First, a refresher on how we'd do this in HTML.
   <h1>My Great Essay</p>
 </html>
 ```
-We can see that this header is really made up of 4 pieces: your name, the date, the name of the class, and the title of your essay. Let's take the name part of the header and make it into a React component. 
+We can see that this header is really made up of 4 pieces: your name, the date, the name of the class, and the title of your essay. Let's take the name part of the header and make it into a React component.
 
 It's important to remember that functional components are JavaScript functions that return a piece of what looks like HTML. (It's really JSX, but it's really similar to HTML. Consider them interchangable for now.) Then, React takes these blocks and updates the structure of your webpage.
 
@@ -28,7 +28,7 @@ function Name(props){
   );
 }
 ```
-But wait a sec-- what's this `props` business all about? And why are there `{ }` inside the paragraph tags? 
+But wait a sec-- what's this `props` business all about? And why are there `{ }` inside the paragraph tags?
 
 `props` is an object that lets us pass data to our functional components so that our components can react to different situations. In this situation, you want your name to show. But what if you want your friend's name to show instead? That's where `props` comes in. In this example, props has the variables `first` and `last`, which specify first and last name, respectively. We need to use `{ }` to make it clear that these are JavaScript variables and not plain text. This lets us print the value of the variable.
 
@@ -39,3 +39,42 @@ Now we can use this component in our function App, which gets exported. You can 
 ```
 
 Awesome! You just made a functional component that displays a name. Just by changing what goes inside the `{}` when you use the Name tag, you can change the name that shows up.
+
+Now lets work on the date. Similar to the name. Let's use `props` to make a date component. Our date needs the day, the month, and the year, so lets pass in these values in our props just like we passed in `first` and `last ` in a `Name` component. First, let us try to write this
+
+```jsx
+function MyDate(props) {
+  return (
+    <p> {props.month}-{props.day}-{props.year} </p>
+  );
+}
+```
+
+We can now use this component to show the date "01-28-2021".
+
+```jsx
+<MyDate month={"01"} day={"28"} year={"2021"}/>
+```
+
+However, there is a slight problem. You love your essay and are constantly updating it. So your essay changes every day! But, you keep forgetting to update the date in your header. Is there any way to automatically update the date so that your blog will always show the current date? We could find some way to do this ourselves, but this sounds like hard work. We would have to spend a couple of hours (or days) screaming in frustration and trying to write and debug the code to do this ourselves, or we could be lazy and take the easier and better way.
+
+Do you remember how we mentioned last time how we use functions to hide complex (or hard) work which we do not want to deal with (or think about)? Well, one advantage of hidding this work is that we can use functions from other people without knowing how they work. We don't need to figure out how to get the current date. We only need to know how to use the work other people have already done for us.
+
+When we call `new Date()` we get the information about the current time. We don't have to worry about how JavaScript gets the value. We wimply need to know how to use it. Some interesting functions that let us use the date value are...
+* `getMonth()`: this function returns the number of the month from 0 (January) to 11 (December)
+* `getDate()`: this function returns the number of the day of the month (1-31)
+* `getYear()`: this function returns the number of the year (for example: 2021)
+
+These functions seem to give us what we want, but `getMonth()` gives us a number from 0 to 11 while we are used to having months that are numbered from 1 to 12. So we need to add 1 to get the normal month number. Now that we know how to use this Date information. Let us use them to automatically get the current date.
+
+```jsx
+let today = new Date();
+let month = today.getMonth() + 1;
+let day = today.getDate();
+let year = today.getFullYear();
+<MyDate month={month} day={day} year={year}/>
+```
+
+This code stores the date value in the variable `today`. Then, it calls the `getMonth()`, `getDate()`, and `getYear()` functions to get the current month, day, and year using the information stored in `today`. We can then use those values to tell our component `MyDate` what the date is. This is simple and easy to use and we saved a lot of time and effort by using the code written by other people.
+
+Now, I am sure that you have all been wondering why we named our component `MyDate` instead of `Date`. Well, to answer your question, you have to remember that computers are stupid and are easily confused. If we have a component named `Date` defined using a function named `Date` when we are also using another function named `Date` to get the current date information, the computer can get confused about which `Date` function we mean. So to help the computer not be confused, we named our component `MyDate` to distinguish between the `Date` constructor function which other people made and the date component that we are making.
