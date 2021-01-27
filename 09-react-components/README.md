@@ -40,7 +40,7 @@ Now we can use this component in our function App, which gets exported. You can 
 
 Awesome! You just made a functional component that displays a name. Just by changing what goes inside the `{}` when you use the Name tag, you can change the name that shows up.
 
-Now lets work on the date. Similar to the name. Let's use `props` to make a date component. Our date needs the day, the month, and the year, so lets pass in these values in our props just like we passed in `first` and `last ` in a `Name` component. First, let us try to write this
+Now lets work on the date. Similarly, to how we made the name component, let's use `props` to make a date component. Our date needs the day, the month, and the year, so lets pass in these values in our props just like we passed in `first` and `last ` in the `Name` component. So, we can write this function which has the month then the day then the year separated by dashes.
 
 ```jsx
 function MyDate(props) {
@@ -56,11 +56,11 @@ We can now use this component to show the date "01-28-2021".
 <MyDate month={"01"} day={"28"} year={"2021"}/>
 ```
 
-However, there is a slight problem. You love your essay and are constantly updating it. So your essay changes every day! But, you keep forgetting to update the date in your header. Is there any way to automatically update the date so that your blog will always show the current date? We could find some way to do this ourselves, but this sounds like hard work. We would have to spend a couple of hours (or days) screaming in frustration and trying to write and debug the code to do this ourselves, or we could be lazy and take the easier and better way.
+However, there is a slight problem. You love your essay and are constantly updating it. So, your essay changes every day. But, you keep forgetting to update the date in your header. Is there any way to automatically update the date so that your blog will always show the current date? We could find some way to do this ourselves, but it sounds like hard work. We would have to spend a couple of hours (or days) in the frustration of writing and debugging the code, or we could be lazy and take the easier and better way.
 
-Do you remember how we mentioned last time how we use functions to hide complex (or hard) work which we do not want to deal with (or think about)? Well, one advantage of hidding this work is that we can use functions from other people without knowing how they work. We don't need to figure out how to get the current date. We only need to know how to use the work other people have already done for us.
+Last time we talked about using functions to hide complex (or hard) work which we do not want to deal with? Well, one advantage of hidding this work is that we can use functions from other people without knowing how they work. We don't need to figure out how to get the current date. We only need to know how to use the functions made by other people that does what we want.
 
-When we call `new Date()` we get the information about the current time. We don't have to worry about how JavaScript gets the value. We wimply need to know how to use it. Some interesting functions that let us use the date value are...
+When we call `new Date()` we get the information about the current time. We don't have to worry about how JavaScript gets the value. We simply need to know how to use it. Some interesting functions that let us use the date value are...
 * `getMonth()`: this function returns the number of the month from 0 (January) to 11 (December)
 * `getDate()`: this function returns the number of the day of the month (1-31)
 * `getYear()`: this function returns the number of the year (for example: 2021)
