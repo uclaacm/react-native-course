@@ -78,3 +78,71 @@ let year = today.getFullYear();
 This code stores the date value in the variable `today`. Then, it calls the `getMonth()`, `getDate()`, and `getYear()` functions to get the current month, day, and year using the information stored in `today`. We can then use those values to tell our component `MyDate` what the date is. This is simple and easy to use and we saved a lot of time and effort by using the code written by other people.
 
 Now, I am sure that you have all been wondering why we named our component `MyDate` instead of `Date`. Well, to answer your question, you have to remember that computers are stupid and are easily confused. If we have a component named `Date` defined using a function named `Date` when we are also using another function named `Date` to get the current date information, the computer can get confused about which `Date` function we mean. So to help the computer not be confused, we named our component `MyDate` to distinguish between the `Date` constructor function which other people made and the date component that we are making.
+
+Now, we’ve put together two functional components in React! Give yourselves a pat on the back before we add one final step to create our finalized header. 
+
+Remember, to create a functional component in React, we use the opening line to call our functional component a name `Header`. It looks something like this 
+```jsx
+function Header(props) {
+```
+In this function, our aim is to utilize the two functional components we just created to create one more functional component that will do the whole header for us. 
+
+Just like before, we will need to use `props`, which will allow us to pass information to our functional component so that it can “react” (pun intended) to different data, which basically allows us to simulate real-world scenarios and problems. 
+So, we will want to pass our header component, our name, the date, along with our class name and the title of our essay. 
+
+Now, if we stop and think before we try to write this code, we will remember that we just wrote functional components to display our name and date, so instead of writing this code all over again, we can use our functional components to simplify the process of displaying our header. 
+
+To use this, we will use the tag 
+```jsx
+<Name first={props.first} last={props.last} />
+```
+to use our functional component that we called Name and the tag 
+```jsx
+<MyDate month={props.month} day={props.day} year={props.year}/>
+```
+to use our functional component that we called MyDate. To recap, we should have this so far: 
+```jsx
+function Header(props) { 
+return (
+  <div>
+    <Name first={props.first} last={props.last} />
+    <MyDate month={props.month} day={props.day} year={props.year}/>
+  </div>
+  );
+}
+```
+At this point, we have coded a functional component that does the work of our two combined functional components that we created previously. But, as we stated before, we now need to add the class that we're in and the title of our essay. 
+
+To do this, we will use JSX tags (just think of them as HTML tags) to display our class and title of essay that will be passed by `props`. So we will now add these tags, using a p tag for our class name and a header tag for our title. 
+
+So, when we update our functional component, it should look like this now: 
+```jsx
+function Header(props) { 
+return (
+  <div>
+    <Name first={props.first} last={props.last} />
+    <MyDate month={props.month} day={props.day} year={props.year}/>
+    <p>{props.class}</p>
+    <h1>{props.title}</h1>
+  </div>
+  );
+}
+```
+
+Here, we added `class` variable and a `title` variable to our props, so that we can pass these in when using our `Header` functional component. 
+
+So, we now have successfully created a functional component that utilizes `props` to display a header, with our name, the date, our class, and the title. 
+
+To use this functional component in React, we can write 
+```jsx
+<Header first="FirstName" 
+        last="LastName" 
+        month="month" 
+        day="day" 
+        year="year"
+        class="AP CS Principles"
+        title="My Great Essay"
+/>
+```
+
+and our functional component will take this code and display to us a beautiful header. 
