@@ -135,13 +135,13 @@ So, we now have successfully created a functional component that utilizes `props
 
 To use this functional component in React, we can write 
 ```jsx
-<Header first="FirstName" 
-        last="LastName" 
-        month="month" 
-        day="day" 
-        year="year"
-        class="AP CS Principles"
-        title="My Great Essay"
+<Header first={"FirstName"}
+        last={"LastName"}
+        month={"month"} 
+        day={"day"}
+        year={"year"}
+        class={"AP CS Principles"}
+        title={"My Great Essay"}
 />
 ```
 
