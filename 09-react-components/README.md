@@ -58,9 +58,10 @@ We can now use this component to show the date "01-28-2021".
 
 However, there is a slight problem. You love your essay and are constantly updating it. So, your essay changes every day. But, you keep forgetting to update the date in your header. Is there any way to automatically update the date so that your blog will always show the current date? We could find some way to do this ourselves, but it sounds like hard work. We would have to spend a couple of hours (or days) in the frustration of writing and debugging the code, or we could be lazy and take the easier and better way.
 
-Last time we talked about using functions to hide complex (or hard) work which we do not want to deal with? Well, one advantage of hidding this work is that we can use functions from other people without knowing how they work. We don't need to figure out how to get the current date. We only need to know how to use the functions made by other people that does what we want.
+Last time we talked about using functions to hide complex (or hard) work which we do not want to deal with. Well, one advantage of hiding this work is that we can use functions from other people without knowing how they work. We don't need to figure out how to get the current date. We only need to know how to use the functions made by other people that does what we want.
 
-When we call `new Date()` we get the information about the current time. We don't have to worry about how JavaScript gets the value. We simply need to know how to use it. Some interesting functions that let us use the date value are...
+Luckily for us, JavaScript has `Date` object which can retrieve the current time. We get the code automatically as part of JavaScript's built-in libraries. When we call `new Date(),` we get information about the current time. We don't have to worry about how JavaScript gets the value or represents it. We simply need to know how to use `new Date()`. Some interesting functions that let us use the date object are...
+
 * `getMonth()`: this function returns the number of the month from 0 (January) to 11 (December)
 * `getDate()`: this function returns the number of the day of the month (1-31)
 * `getYear()`: this function returns the number of the year (for example: 2021)
