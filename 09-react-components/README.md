@@ -11,8 +11,8 @@ First, a refresher on how we'd do this in HTML.
 <html>
   <p>FirstName LastName</p>
   <p>month-day-year</p>
-  <p>Class<p>
-  <h1>My Great Essay</p>
+  <p>Class</p>
+  <h1>My Great Essay</h1>
 </html>
 ```
 We can see that this header is really made up of 4 pieces: your name, the date, the name of the class, and the title of your essay. Let's take the name part of the header and make it into a React component.
