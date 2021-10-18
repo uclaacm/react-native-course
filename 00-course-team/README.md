@@ -1,16 +1,38 @@
 # Course Team
 
-We're a group of UCLA students (in an organization called [ACM Teach LA](https://teachla.uclaacm.com)) who love teaching people about just how *awesome* computer science is! Here's a bit about each of us:
+We're a group of UCLA students (in an organization called [ACM Teach LA](https://teachla.uclaacm.com)) who love teaching people about just how _awesome_ computer science is! Here's a bit about each of us:
 
-* [Lead Instructor: Chase](#lead-instructor-chase)
-* [Teach LA President: Matt](#teach-la-president-matt)
-* [Instructor: Evan](#instructor-evan)
-* [Instructor: Lisha](#instructor-lisha)
-* [Instructor: Param](#instructor-param)
-* [About Teach LA](#about-teach-la)
+# The 2021-2022 Team
 
+- [Lead Instructor: Matt](#lead-instructor-matt)
+- [Instructor: Evan](#instructor-evan)
 
-## Lead Instructor: Chase
+## Lead Instructor: Matt
+
+Hi there! I'm Matt, a 2nd year Computer Science and Engineering Major at UCLA, and I'm pumped to help lead the React Native course this year!
+
+React-Native was actually my first introduction to web and app development and I sorely wish that I started learning it earlier. I've used these tools & technologies that we're covering this year: (HTML,CSS JS, React, React-Native, Github) on cool projects/work in the past and I truly believe that this class can help us make some really cool things in the future!
+
+Feel free to contact me with any questions or about anything in web/app development in general: [matthewcn56@gmail.com](mailto:matthewcn56@gmail.com)
+
+# Instructor: Evan
+
+Hi, I'm Evan, a second year Computer Science student at UCLA.
+
+I remember taking AP CSP in high school and the class actually sparked my interest in pursuing CS in college. I'm passionate about web development and look forward to working with you all in this class!
+
+If you have any question or concerns, feel free to reach out at [evanhe27@gmail.com](mailto:evanhe27@gmail.com)
+
+# The 2020-2021 Team
+
+- [Lead Instructor: Chase](#2021-lead-instructor-chase)
+- [Teach LA President: Matt](#2021-teach-la-president-matt)
+- [Instructor: Evan](#2021-instructor-evan)
+- [Instructor: Lisha](#2021-instructor-lisha)
+- [Instructor: Param](#2021-instructor-param)
+- [About Teach LA](#about-teach-la)
+
+## 2021 Lead Instructor: Chase
 
 Hi, my name is Chase, I'm a 2nd year Computer Science student at UCLA.
 
@@ -18,7 +40,7 @@ Super excited to teach this class, I actually never got the opportunity to take 
 
 First and foremost I'm here to support you, so if you have any questions or concerns, don't hesistate to reach out. [chasekap@gmail.com](mailto:chasekap@gmail.com)
 
-## Teach LA President: Matt
+## 2021 Teach LA President: Matt
 
 Hey there, my name is Matt! I'm a 3rd-year Computer Science & Math-Economics double major at UCLA, and I'm particularly passionate about how we can use computers to empower people!
 
@@ -26,7 +48,7 @@ This class has been something that I've been working on for the past year, and I
 
 I've done web development (and other CS things) at startups, medium-sized companies, and huge ones (Amazon!) - if you have any questions about web development, computer science, or really anything, I'd be glad to talk about it! Say hi in the class, or shoot me an email at [matt@matthewwang.me](mailto:matt@matthewwang.me)!
 
-## Instructor: Evan
+## 2021 Instructor: Evan
 
 Hey all! I'm a 2nd year student at UCLA currently studying Computer Science.
 
@@ -34,7 +56,7 @@ I love web development and think it's one of the most accessible forms of techno
 
 Hope to meet you all virtually in class. Please don't hesistate to reach out to me at [evanzhong@ucla.edu](mailto:evanzhong@ucla.edu) if you have any questions, feedback, or just want to talk.
 
-## Instructor: Lisha
+## 2021 Instructor: Lisha
 
 Hi, I'm Lisha! I'm a 3rd year at UCLA studying Computer Science.
 
@@ -42,7 +64,7 @@ I actually started my journey with CS by taking AP CSP in my senior year of high
 
 If you have questions about anything at all or just want to say hi, please feel free to email me at [lisha4mohan@yahoo.com](mailto:lisha4mohan@yahoo.com)!
 
-## Instructor: Param
+## 2021 Instructor: Param
 
 Hey everyone, I'm Param! I'm a 3rd-year Computer Science major at UCLA from India!
 
