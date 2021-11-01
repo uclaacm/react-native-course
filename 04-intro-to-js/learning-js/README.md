@@ -23,11 +23,19 @@ If Node.js was not installed, run `nvm install --LTS` to install the latest stab
 
 Rather than rely on npm as our package manager, we will use yarn, an alternative that will offer significant performance improvements. Install yarn with the command <br /> `npm install -g yarn`. 
 
-
-
-
-
 # Getting Started with Create React App
+
+With everything installed, we can now begin exploring JavasScript through React!
+
+As a convenient way to get started, we will use the Create React App environment, which will perform all the frontend setup necessary for a simple, single-page React application. For now, we will not discuss any React features, but rather use React's dynamic re-rendering to introduce core features of the JavasScript language. We will examine React itself in more detail in Week 7.
+
+Run the following commands to set up Create React App:
+
+```
+npx create-react-app my-app
+cd my-app
+yarn start
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
