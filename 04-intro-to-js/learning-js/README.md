@@ -1,3 +1,32 @@
+# Installing Node.js and npm with nvm
+
+**Node.js** is a Javascript runtime environment that will allow you to execute Javascript code outside of a web browser. **npm** is Node.js's default package manager, which will allow you to conveniently manage the dependencies own applications. Node.js and npm are both open source projects.
+
+To install Node.js and npm, we will be using another application, we will be using another program, **nvm** (node version manager). To use nvm, run either of the following scripts in your home directory:
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+```
+
+```
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+```
+
+Complete nvm source code, documentation, and installation troubleshooting can be found here: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
+
+The nvm installation script should install Node.js (and therefore npm) by default. Verify the successful installation by running <br />
+`node -v` and `npm -v`, which will output the programs' respective version numbers.
+
+If Node.js was not installed, run `nvm install --LTS` to install the latest stable version of Node.js.
+
+# Installing yarn with npm
+
+Rather than rely on npm as our package manager, we will use yarn, an alternative that will offer significant performance improvements. Install yarn with the command <br /> `npm install -g yarn`. 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
